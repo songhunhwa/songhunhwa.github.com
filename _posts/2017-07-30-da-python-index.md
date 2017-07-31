@@ -6,15 +6,15 @@ author: songhunhwa
 
 ## Python Data Analysis
 
-#### Preparation 
+### Preparation
   - Mandatory Modules and Introduction
   - How to use Jupyter Notebook
 
-#### Basic Programming
+### Basic Programming
   - Basic Programming 
   - Numpy & Pandas
 
-#### Visualization
+### Visualization
   - Matplotlib
   - Seaborn
 
