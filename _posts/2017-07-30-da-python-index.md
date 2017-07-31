@@ -1,6 +1,6 @@
 ---
 title: "파이썬 데이터분석 목차"
-description: ""
+layout: post
 author: songhunhwa
 ---
 
