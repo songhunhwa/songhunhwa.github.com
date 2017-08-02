@@ -27,12 +27,12 @@ author: songhunhwa
   - 분포 변환
   - 차원 축소
 
-### 실전 통계 분석
+### 통계 분석
   - Scipy
   - Statsmodel
 
-### 실전 기계학습
+### 기계학습
   - Scikit-learn
   
-### 실제 분석 예제
+### 실전 분석
   - Kaggle 데이터셋으로 실제 분석 진행
