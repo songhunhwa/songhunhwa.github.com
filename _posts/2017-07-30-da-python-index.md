@@ -5,15 +5,16 @@ author: songhunhwa
 ---
 
 ## 파이썬으로 하는 데이터 분석
+- 블로그 소개
 
 ### 1. 분석 준비
 - 프로그램 설치
-  - Anaconda Package
+	- Anaconda Package
 - 기본 사용법 
-  - Jupyter Notebook
-  - Import Libraries
-  - 파일 불러오기
- 
+	- Jupyter Notebook
+	- Import Libraries
+	- 파일 불러오기
+	
 ### 2. 파이썬 프로그래밍 기초
 - 파이썬 기초 문법
   - 데이터 형태
