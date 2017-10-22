@@ -4,41 +4,42 @@ layout: post
 author: songhunhwa
 ---
 
-### 파이썬 데이터 분석 실무
+### Python 데이터 분석 실무 파트
 - **목적**
-	- 목적
-		- 실무에서 접하는 분석 문제에 대한 이해와 직접 데이터를 통해 해결 
-		- 데이터 추출 및 탐색, 전처리 및 모델링/평가의 과정에서 실무 위주의 분석 과정을 실습
-		- 실무자로서 필요한 소프트 스킬/역량 획득 (문제 정의, 태도 및 리포트/커뮤니케이션 등)
-	- 기대사항
-		- 실무 적응력을 높이기 위해 분석 업무에 대한 이해와 필요한 기술 및 소프트 역량을 획득
-		
-- **내용**
-	- 분석 주제/결과 예시
-		- 주요 분석 예제
+	- 실무에서 접하는 다양한 비즈니스 문제를 데이터를 통해 해결하는 경험
+	- 문제 정의부터 데이터 추출/전처리 및 EDA/모델링의 과정을 경험함으로써 실무 역량 제고
+	- 태도 및 커뮤니케이션 등 소프트 스킬을 획득하여 균형있는 실무 역량 획득
+- **커리큘럼**
+	- 분석 개요
+		- 분석 주제 및 문제 예시
 		- 분석 진행 프로세스
 		- 팀 구성 및 포지션
-		- 주요 스킬 및 이론
-	- 배경/목적 및 Framework 설정하는 방법
-		- 문제 정의와 목적 명확화의 중요성
-		- Framework 설정 방법
-	- 데이터 추출 및 전처리
-		- SQL을 통한 데이터 추출
-		- 데이터 전처리 (Scaling, Missing Value, Outliers, Transformation, PCA) with Pandas/Numpy
-		- 시각화 with Matplotlib
-	- 데이터 탐색 (EDA)
-		- 변수간 관계, 분포 with Pandas/Numpy, Matplotlib
-		- Implication 도출
-	- 통계 분석
-		- T-test, ANOVA with Scipy, Statesmodel
-	- 머신러닝 모델 구축 및 평가
-		- Regression with Python with Scikit-learn
-		- Classification with Python with Scikit-learn
-		- Text Mining & Recommendation engine with Scikit-learn
-		- Model Evaludation with Scikit-learn
-	- 대시보드 구축 및 리포트 작성
-		- 대시보드 with Re:dash
-		- 보고서 작성 with Markdown 문서
-	
-- **개별 프로젝트**
-	- 개별 프로젝트 진행 및 피드백
+		- 요구 스킬 및 경험
+	- 데이터 수집 및 처리 시스템
+		- Apache Spark & Modules 
+		- AWS Sevice
+		- 클라이언트/서버 로그 설계
+		- Json 및 Text 형태의 로그 데이터 읽기 및 전처리 
+	- 사례1. 유저 Funnel 분석 (구간별 전환 및 이탈율을 구하자)
+		- 문제 정의 및 목적 명확화, 가설 정립
+		- 로그 데이터 Parsing 및 전처리
+		- 탐색적 데이터 분석 (EDA)
+		- 세그멘테이션 (그룹별 구분) 
+	- 사례2. 랭킹 및 추천 시스템 Prototype 구축
+		- 문제 정의
+		- 데이터 추출 및 전처리
+		- Popularity-based model
+		- Collarborative Filtering
+	- 사례3. 신규 비즈니스 지표 개발
+		- 이탈 방지 모델 구축을 위한 Risk Indicator 정의 
+		- 변수 생성 및 전처리
+		- Regression 모델을 이용한 가중치 산출
+	- 대시보드 구축
+		- Re:dash 소개
+		- 대시보드 만들기 실습
+	- 소프트 스킬
+		- 마인드셋/태도
+		- 커뮤니케이션 및 보고서 작성
+		- 문제 해결 및 논리성	
+	- 개별 프로젝트
+		- 개별 프로젝트 진행 및 피드백
