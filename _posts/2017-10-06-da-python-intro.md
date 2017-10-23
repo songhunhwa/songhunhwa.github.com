@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "커리큘럼"
 layout: post
 author: songhunhwa
 ---
