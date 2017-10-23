@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+본 블로그는 '파이썬을 이용한 데이터 분석 실무 강의'를 진행하기 위해 교재를 정리한 곳입니다. 자료에 대한 문의는 songhunhwa@gmail.com 로 보내주시고, 자료는 자유롭게 공유가 가능합니다. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+저는 현재 IT회사 데이터 분석가로 재직중이고, 소비자 리서치 회사와 여러 IT회사에서 근무한 경험이 있습니다. 총 근무 연수는 약 7년이며 학사 및 석사를 심리학으로 전공했습니다.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+주요 담당업무는 로그 설계, 유저 행동 패턴 분석, 기계학습/모델링 관련 업무 등이며, 스파크 환경에서 SQL 및 파이썬을 이용해 실무를 진행하고 있습니다. 데이터 엔지니어, 이해관계자와 긴밀히 협업하면서 데이터를 통해 의미 있는 결과를 내기 위해 노력하고 있습니다.
 
+마지막으로, 본 강의 자료의 대부분은 제 개인적 경험을 토대로 작성된 것입니다. 데이터 분석이라는 분야가 매우 넓고 절대적 기준이라는 것이 존재하지 않으므로 비판적 사고로 그리고 참고적인 내용으로 받아들이는 태도가 필요합니다. 이 분야로 전직 혹은 신규로 진입하시는 분들을 위해 조금이나마 도움이 되길 바라며, 진로나 실무환경 등 다양한 내용에 대해 질문하셔도 답변해드리겠습니다. 앞으로 여러분의 건승을 빌겠습니다.
 
-[jekyll-organization]: https://github.com/jekyll
