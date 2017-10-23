@@ -1,5 +1,5 @@
 ---
-title: "분석 실무에 대한 이해"
+title: "1회차: 분석 실무에 대한 이해"
 layout: post
 author: songhunhwa
 ---
