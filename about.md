@@ -3,8 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-<img src="img/lecture/profile.png" width="250">
 본 블로그는 '파이썬을 이용한 데이터 분석 실무 강의'를 진행하기 위해 교재를 정리한 곳입니다. 자료에 대한 문의는 songhunhwa@gmail.com 로 보내주시고, 자료는 자유롭게 공유가 가능합니다. 
 
 저는 현재 IT회사 데이터 분석가로 재직중이고, 소비자 리서치 회사와 여러 IT회사에서 근무한 경험이 있습니다. 2010년 말부터 경력을 쌓았고 학사 및 석사를 심리학으로 전공했습니다.
