@@ -17,7 +17,7 @@ author: songhunhwa
 	- 일반적인 IT 회사의 경우 사업 영역을 간단하게 1) 비즈니스 영역, 2) 개발 영역으로 나눌 수 있다. (실제 훨씬 복잡하다)
 	- 쉽게 말해서, IT 회사는 서비스를 개발하고 이것을 통해 비즈니스를 하면서(소비자에게 가치를 전달하면서) 매출을 발생시킨다.
 	- 데이터는 이 과정에서 도움을 제공할 수 있다. (물론 데이터를 잘 이용한다는 가정 하에서..)
-	- ![img](/img/lecture/it_concept.png)
+![img](/img/lecture/it_concept.png)
 - 이제 영역별로 데이터가 제공할 수 있는 가치에 대해 살펴보자.
 	- 비즈니스 영역은 보다 세부적으로 아래와 같이 구분된다.
 	- **기획/UX**
@@ -26,10 +26,8 @@ author: songhunhwa
 		- Converion Rate(전환율)은 Churn Rate(이탈율)의 반대어이다. 즉, Churn Rate = 1 - Conversion Rate 
 		- 보통 Conversion Rate은 Funnel 분석을 통해 파악할 수 있다.
 		- Funnel 분석이란?
-		- ![img](/img/lecture/funnel.png)
-		
-	- 마케팅
-	- 영업/CS
+![img](/img/lecture/funnel.png)
+
 -
 - 기타
 - xxx
