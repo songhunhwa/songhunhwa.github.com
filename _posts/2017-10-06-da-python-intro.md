@@ -31,76 +31,76 @@ author: songhunhwa
 강의 커리큘럼은 총 8회로 진행되며, 5회의 강의/실습과 3회의 프로젝트로 진행된다. 상황에 따라 일부 내용은 변동될 수 있다.
 
 #### [1강 Part 1: 분석실무에 대한 이해](https://songhunhwa.github.io/2017/10/24/da-python-concept.html)
-	- 분석 주제/문제 예시
-	- 분석 진행 프로세스
-	- 데이터사이언스 팀구성 및 포지션별 역할
-	- 분석 환경 및 시스템 특성
-	- 소프트 스킬/역량 (마인드셋/태도, 커뮤니케이션 및 보고서 작성법, 문제 중심 해결 및 논리적 사고)
+- 분석 주제/문제 예시
+- 분석 진행 프로세스
+- 데이터사이언스 팀구성 및 포지션별 역할
+- 분석 환경 및 시스템 특성
+- 소프트 스킬/역량 (마인드셋/태도, 커뮤니케이션 및 보고서 작성법, 문제 중심 해결 및 논리적 사고)
 	
 #### 1강 Part 2: 데이터 수집 및 처리 시스템 소개
-	- Apache Spark & Modules 소개
-	- AWS 소개
-	- 클라이언트 로그 설계 사례 
-	- (실습)Json 및 Text 형태의 로그 데이터 Parsing
-	- (실습)SQL 및 Numpy, Pandas를 통한 전처리 
+- Apache Spark & Modules 소개
+- AWS 소개
+- 클라이언트 로그 설계 사례 
+- (실습)Json 및 Text 형태의 로그 데이터 Parsing
+- (실습)SQL 및 Numpy, Pandas를 통한 전처리 
 	
 #### 2강: 유저 Funnel 분석을 통해 이탈 구간 개선
-	- 문제 정의 및 가설 정립
-		- 주요 구간을 어떻게 선정할 것인가?
-		- Conversion Rate을 어떻게 구할 것인가?
-		- 예상되는 Bottleneck 구간은 어디인가?
-	- JSON 로그 데이터 Parsing 및 전처리
-		- JSON이란?
-		- Python 라이브러리를 이용한 JSON Parsing
-		- Pandas로 데이터셋을 깔끔하게 정리하기 
-	- 탐색적 데이터 분석 (EDA)
-		- Pandas를 통해 기초 통계 산출하기
-		- Groupby 집계함수를 통해 주요 유저 Path를 확인하기
-		- 변수별 분포와 상관관계 구하기
-	- 세그멘테이션 & 그룹 타깃팅
-		- 초간단 세그멘테이션을 통한 가설 수립
-		- Kmeans를 통한 클러스터링
+- 문제 정의 및 가설 정립
+	- 주요 구간을 어떻게 선정할 것인가?
+	- Conversion Rate을 어떻게 구할 것인가?
+	- 예상되는 Bottleneck 구간은 어디인가?
+- JSON 로그 데이터 Parsing 및 전처리
+	- JSON이란?
+	- Python 라이브러리를 이용한 JSON Parsing
+	- Pandas로 데이터셋을 깔끔하게 정리하기 
+- 탐색적 데이터 분석 (EDA)
+	- Pandas를 통해 기초 통계 산출하기
+	- Groupby 집계함수를 통해 주요 유저 Path를 확인하기
+	- 변수별 분포와 상관관계 구하기
+- 세그멘테이션 & 그룹 타깃팅
+	- 초간단 세그멘테이션을 통한 가설 수립
+	- Kmeans를 통한 클러스터링
 		
 #### 3강: 랭킹 및 추천 로직 Prototype 구축
-	- 문제 정의 및 가설 수립
-		- 랭킹과 추천을 위한 목적 정의
-		- 모델 효과 측정을 위한 지표 산출
-	- 데이터 추출 및 전처리
-		- Pandas로 CSV 데이터 읽기
-		- 데이터셋 준비하기
-	- Popularity-based model
-		- 변수 선정 및 데이터셋 준비
-		- Score 산출 및 정렬	
-		- 클릭율 예측 모델(Regression)을 통한 랭킹 로직 생성
-		- 로직 평가 및 개선
-	- Collarborative Filtering
-		- 데이터셋 준비
-		- Neighbor, MF 기반 모델 생성
-		- 모델 평가 및 개선
+- 문제 정의 및 가설 수립
+	- 랭킹과 추천을 위한 목적 정의
+	- 모델 효과 측정을 위한 지표 산출
+- 데이터 추출 및 전처리
+	- Pandas로 CSV 데이터 읽기
+	- 데이터셋 준비하기
+- Popularity-based model
+	- 변수 선정 및 데이터셋 준비
+	- Score 산출 및 정렬	
+	- 클릭율 예측 모델(Regression)을 통한 랭킹 로직 생성
+	- 로직 평가 및 개선
+- Collarborative Filtering
+	- 데이터셋 준비
+	- Neighbor, MF 기반 모델 생성
+	- 모델 평가 및 개선
 		
 #### 4강: 신규 비즈니스 지표 개발 (이탈 위험 지표)
-	- 유저 이탈 방지를 위한 Risk Indicator 정의
-		- Key Risk Indicator란?
-	- 변수 생성 및 전처리
-		- 데이터셋 읽기 및 전처리
-		- EDA 및 Bounce 기준 정하기
-		- Regression의 회귀계수로 지표 생성하기
-	- 웹 대시보드 구축
-		- Re:dash란?
-		- Re:dash로 대시보드를 구축하기
-	- Statesmodel을 이용한 시계열 예측
-		- 지표의 흐름을 예측해보자
+- 유저 이탈 방지를 위한 Risk Indicator 정의
+	- Key Risk Indicator란?
+- 변수 생성 및 전처리
+	- 데이터셋 읽기 및 전처리
+	- EDA 및 Bounce 기준 정하기
+	- Regression의 회귀계수로 지표 생성하기
+- 웹 대시보드 구축
+	- Re:dash란?
+	- Re:dash로 대시보드를 구축하기
+- Statesmodel을 이용한 시계열 예측
+	- 지표의 흐름을 예측해보자
 		
 #### 5강: 결제 예측 모델을 통한 결제율 제고
-	- 문제 정의 및 목적
-		- 결제 가능성이 높은 집단의 특성을 파악하고 예측하는 모델 생성
-	- 데이터 추출 및 준비
-		- 변수 선정 및 전처리
-	- 모델 구축 및 평가
-		- Scikit-learn의 Pipeline 기능을 이용해 Classification 모델 생성하기
-		- 오버피팅 이슈 해결(K-fold), 하이퍼파라메터 튜닝하기 (GridSearch)      
-		- Scikit-learn.Evaluation 모듈을 통해 모델 평가/개선하기  
+- 문제 정의 및 목적
+	- 결제 가능성이 높은 집단의 특성을 파악하고 예측하는 모델 생성
+- 데이터 추출 및 준비
+	- 변수 선정 및 전처리
+- 모델 구축 및 평가
+	- Scikit-learn의 Pipeline 기능을 이용해 Classification 모델 생성하기
+	- 오버피팅 이슈 해결(K-fold), 하이퍼파라메터 튜닝하기 (GridSearch)      
+	- Scikit-learn.Evaluation 모듈을 통해 모델 평가/개선하기  
 		
 #### 6~8강: 개별 프로젝트**  
-	- 개별 프로젝트 진행 및 피드백
-	- 프로젝트 결과 발표
+- 개별 프로젝트 진행 및 피드백
+- 프로젝트 결과 발표
