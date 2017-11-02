@@ -16,7 +16,7 @@
 title: Data Analysis with Python
 email: songhunhwa@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This blog has educational contents for students who want to learn about data analysis. Feel free to share and use any contents here.
+  This blog has the educational contents for students who want to learn about practical data analysis. Feel free to share and use any contents here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://songhunhwa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
