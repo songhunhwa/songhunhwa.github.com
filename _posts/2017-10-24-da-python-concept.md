@@ -48,13 +48,13 @@ UX 개선뿐만 아니라, 데이터에 기반해 새로운 서비스를 기획�
 
 <img src="/img/lecture/mix.png">
 
-[Source](http://www.smartinsights.com/digital-marketing-strategy/online-marketing-mix/7ps-marketing-mix-alternative)
+Source: [Smart Insight](http://www.smartinsights.com/digital-marketing-strategy/online-marketing-mix/7ps-marketing-mix-alternative)
 
 마찬가지로, [STP](https://ko.wikipedia.org/wiki/STP_%EB%A7%88%EC%BC%80%ED%8C%85)(Segment, Targeting, Positioning) 전략 수립을 위해 데이터 분석이 활용되기도 한다. K-means 등의 클러스터링을 통해 전체 고객을 나누고 특정 기준(예, 충성도, 재구매율)으로 세그먼트를 정렬한 후 우선순위에 따라 맞춤형 컨텐츠/커뮤니케이션을 제공하여(Association-Rules), 마케팅 활동의 효율성/효과성을 높인다.    
 
 <img src="/img/lecture/stp.png">
 
-[Source](https://www.logicalfox.com/blog/what-it-means-to-niche-down-and-how-to-do-it)
+Source: [Logical Fox](https://www.logicalfox.com/blog/what-it-means-to-niche-down-and-how-to-do-it)
 
 > A group of individuals or organisations sharing one or more similar characteristics that cause them to have relatively similar product needs and buying characteristics
 — Dibb et. al.
