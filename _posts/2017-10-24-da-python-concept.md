@@ -44,10 +44,21 @@ UX 개선뿐만 아니라, 데이터에 기반해 새로운 서비스를 기획�
 - 구매 대비 재구매 (Repurchase Rate)
 
 위 지표를 세그먼트별로 구분하거나 유입 채널별로 구분하는 등 다양한 관점으로 효과를 분석하고 마케팅 활동을 개선할 수 있다. 주로 사용하는 분석 방법은 회귀분석(Regression)이다. 이 경우, 실수 예측보다는 인과관계 파악하고 마케팅 Mix를 위해 이용한다. 
-마케팅 Mix는 최적의 채널별 예산안 분배를 위한 분석으로, 채널별 Expense(원인, X)와 클릭율(결과, Y)이 필수 요인이다.   
-   
-마찬가지로, STP(Segment, Targeting, Positioning) 전략 수립을 위해 데이터 분석이 활용되기도 한다. K-means 등의 클러스터링을 통해 전체 고객을 나누고 특정 기준(예, 충성도, 재구매율)으로 세그먼트를 정렬한 후 우선순위에 따라 맞춤형 컨텐츠/커뮤니케이션을 제공하여(Association-Rules), 마케팅 활동의 효율성/효과성을 높인다.    
-		
+[마케팅 Mix](http://www.smartinsights.com/digital-marketing-strategy/online-marketing-mix/7ps-marketing-mix-alternative/)는 최적의 채널별 예산안 분배를 위한 분석으로, 채널별 Expense(원인, X)와 클릭율(결과, Y)이 필수 요인이다.   
+
+<img src="/img/lecture/mix.png">
+
+[Source](http://www.smartinsights.com/digital-marketing-strategy/online-marketing-mix/7ps-marketing-mix-alternative)
+
+마찬가지로, [STP](https://ko.wikipedia.org/wiki/STP_%EB%A7%88%EC%BC%80%ED%8C%85)(Segment, Targeting, Positioning) 전략 수립을 위해 데이터 분석이 활용되기도 한다. K-means 등의 클러스터링을 통해 전체 고객을 나누고 특정 기준(예, 충성도, 재구매율)으로 세그먼트를 정렬한 후 우선순위에 따라 맞춤형 컨텐츠/커뮤니케이션을 제공하여(Association-Rules), 마케팅 활동의 효율성/효과성을 높인다.    
+
+<img src="/img/lecture/stp.png">
+
+[Source](https://www.logicalfox.com/blog/what-it-means-to-niche-down-and-how-to-do-it)
+
+> A group of individuals or organisations sharing one or more similar characteristics that cause them to have relatively similar product needs and buying characteristics
+— Dibb et. al.
+
 #### 영업/CS/개발 영역
 영업 영역에서는 신규 고객 창출과 기존 고객의 유지가 주요한 관심사이다. 데이터를 통해 신규 고객을 창출할 수 있는 기회/영역을 탐색할 수 있으며, 고객의 이탈을 사전 예측함으로써 이탈을 예방할 수 있다.   
 CS 영역에서는 자동화 응대나 이슈 대응을 위해 데이터를 활용할 수 있다.   
