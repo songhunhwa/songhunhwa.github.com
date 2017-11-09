@@ -164,7 +164,7 @@ Source: [Science2knowledge](https://science2knowledge.wordpress.com/data-science
 	- 구글 애널리틱스, 파이어베이스
 	- SPSS, SAS, Matlab, Octave
 
-<img src="/img/lecture/tools.png" width="70%">
+<img src="/img/lecture/tools.png">
 
 ### 소프트 스킬 및 역량
 태도 및 사고 커뮤니케이션 및 보고서 작성  
