@@ -44,12 +44,14 @@ UX 개선뿐만 아니라, 데이터에 기반해 새로운 서비스를 기획�
 또한 도메인 특성에 따라 다양한 목적으로 머신러닝의 Regression, Classification 기법이 활용된다. 예를 들면, 어뷰징 탐지나 채권 상환 여부 예측을 위해 Classification 모델을 만들며, 클릭율 예측을 위해 Regression 모델이 활용된다.       
 
 #### 마케팅 영역
-기본적으로 마케팅 부서는 돈을 쓴다. 따라서 ROI(Return on Investment)에 민감하며, KPI로 고려되는 경우가 많다. ROI는 Input 대비 Output을 계산한후 산출하며, 최소의 Input으로 Ouput을 극대화하는 것이 마케팅의 핵심이다.   
-기본적인 지표는 아래와 같다.    
+기본적으로 마케팅 부서는 돈을 쓴다. 따라서 ROI(Return on Investment)에 민감하며, KPI로 고려되는 경우가 많다. ROI는 Input 대비 Output을 계산한후 산출하며, 최소의 Input으로 Ouput을 극대화하는 것이 마케팅의 핵심이다. 기본적인 지표는 아래와 같다.    
 - 집행량(expense) 대비 노출(impression)
 - 노출 대비 클릭 (Click Thorugh Rate) 
 - 클릭 대비 구매 (Purchase Rate)
 - 구매 대비 재구매 (Repurchase Rate)
+- 위 지표 역시 일종의 Funnel 분석이며, Segment별 성과를 측정할 수 있다.
+
+<img src="/img/lecture/roi.png">
 
 위 지표를 세그먼트별로 구분하거나 유입 채널별로 구분하는 등 다양한 관점으로 효과를 분석하고 마케팅 활동을 개선할 수 있다. 주로 사용하는 분석 방법은 회귀분석(Regression)이다. 이 경우, 실수 예측보다는 인과관계 파악하고 마케팅 Mix를 위해 이용한다. 
 [마케팅 Mix](http://www.smartinsights.com/digital-marketing-strategy/online-marketing-mix/7ps-marketing-mix-alternative/)는 최적의 채널별 예산안 분배를 위한 분석으로, 채널별 Expense(원인, X)와 클릭율(결과, Y)이 필수 요인이다.   
