@@ -37,7 +37,7 @@ author: songhunhwa
 - 분석툴 및 환경 소개
 - 소프트 스킬/역량
 	
-#### 1강 Part 2: 데이터 수집 및 처리 시스템 소개
+#### [1강 Part 2: 데이터 수집 및 처리 시스템 소개](https://songhunhwa.github.io/2017/10/24/da-python-intro_p2.html)
 - Apache Spark & Modules 소개
 - 클라이언트 로그 설계 사례 
 - (실습)Json 및 Text 형태의 로그 데이터 Parsing
