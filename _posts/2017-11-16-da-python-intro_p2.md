@@ -61,3 +61,15 @@ Source: [Duchess france](http://www.duchess-france.org/starting-with-spark-in-pr
 
 Source: [Birendra Kumar Sahu](http://www.grroups.com/blog/how-spark-deconstructed)
 
+#### 스파크 Modules 
+스파크가 최근에 각광을 받게 된 배경에는 스파크가 제공하는 모듈도 영향을 미쳤다. 스파크는 분산처리프레임 위에 **Spark Streaming, SparkSQL, MLlib, GraphX**와 같은 모듈을 제공하여 실시간 수집부터 데이터 추출/전처리, 머신러닝 및 그래프 분석까지 하나의 흐름에 가능하도록 개발되었다. 
+
+ - Spark SQL
+    - xxx
+ - MLlib (깃헙 코드 추가)
+ - Spark Streaming
+ - GraphX
+ 
+ 
+ 
+
