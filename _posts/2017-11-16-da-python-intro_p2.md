@@ -28,7 +28,7 @@ author: songhunhwa
 
 Source: [Nimisha Sharath Sharma](https://www.linkedin.com/pulse/apache-spark-scala-via-python-nimisha-sharath)
 
-#### 스파크 RDD, DataFrame
+#### 스파크 RDD, DataFrame, Lazy execution
 스파크에서 다루는 주요 데이터 타입은 **RDD**(Resilient Distributed Datasets)와 **DataFrame**이다. 기존 하둡에서는 디스크에서 데이터 I/O가 발생하는 반면, 스파크는 RAM에서 발생하게 설정할 수 있으므로 속도에서 비약적인 차이가 발생한다. 최근에는 RDD보다 DataFrame을 이용하는 추세이며(RDBS의 테이블이나 Pandas Dataframe과 유사하기 때문), Spark의 특징인 **Lazy execution**을 통해 보다 효율적인 처리/분석이 가능하다.
      
 Lazy Execution은 함수를 **Transform, Action** 으로 구분해 Action 일 경우에만 실제 실행이 발생하는 것을 의미한다. 매번 결과를 갖고 오지 않고, 필요한 경우에만 RAM을 통해 데이터 I/O가 발생하므로 분석 작업 속도가 매우 높아진다. Spark에서 데이터 분석을 하는 경우, 매우 큰 사이즈의 데이터를 다루는 경우가 많아 이러한 매커니즘은 매우 중요한 장점으로 작용한다. (다행히 Transform 단계라도 에러를 내보내므로 Action 단계에서 제대로 결과가 나왔는지 걱정할 필요는 없다)     
@@ -109,9 +109,13 @@ predictions.show()
 
 <img src="/img/lecture/aws_frame.png" width="70%">
 
+Source: [AWS](https://aws.amazon.com)
 
+### 클라이언트 로그 설계
 
+### 실습1. Json Log Parsing
 
+### 실습2. 전처리 with SQL, Pandas
 
 
  
