@@ -21,7 +21,7 @@ author: songhunhwa
     
 분석가가 좋은 성과를 내기 위해서는 **분석 환경을 잘 이해/활용하고 때로는 (분석 관점에 맞게) 개선점을 엔지니어에게 전달**하는 등 역할이 필요하다. 따라서 (실무는 엔지니어가 진행하더라도) 환경/시스템적 요소에 대한 이해와 지속적인 관여 역시 분석가의 역할이기도 하다.    
           
-#### ![스파크](https://spark.apache.org/) 소개
+#### [스파크](https://spark.apache.org/) 소개
 최근 비정형 데이터의 생성과 매우 큰 사이즈 등의 이슈로 기존 RDBS에서 하둡/스파크를 도입하는 추세이다. 비록 RDBS만큼 즉각적 생성/수정/변경 등은 어렵지만, Spark나 하둡을 이용할 경우 분산 저장 및 처리를 통해 빠른 분석 진행이 가능하다. 최근에는 하둡 보다 **분석 친화적인 스파크**를 주로 사용해 분석하는 추세이다. 스파크가 Pyspark이나 SparkR 같은 다양한 분석 API를 제공하고 있기 때문이다. 참고로 하둡은 Java, Spark는 원래 스칼라 기반이다.
 
 <img src="/img/lecture/spark_frame.png" width="65%">
@@ -52,8 +52,6 @@ Source: [Research Computing](http://researchcomputing.github.io/meetup_spring_20
 Source: [Duchess france](http://www.duchess-france.org/starting-with-spark-in-practice/)
 
 **Lazy Execution**
-
-
  - Transfrom: `filter`, `select`, `drop`, `join`
  - Action: `count`, `collect`, `show`, `head`, `take`
 
