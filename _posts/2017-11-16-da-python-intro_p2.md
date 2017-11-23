@@ -122,7 +122,7 @@ Source: [AWS](https://aws.amazon.com)
 ```JSON
 {
  "memid": "int", 
- "sessionid": "int" 
+ "sessionid": "int", 
  "ver": "float",
  "screen": "Intro",
  "event": "View",
