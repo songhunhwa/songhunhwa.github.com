@@ -121,16 +121,16 @@ Source: [AWS](https://aws.amazon.com)
 
 ```JSON
 {
- "memid": "int", # header
- "sessionid": "int" # header
- "ver": "float", # header
+ "memid": "int", 
+ "sessionid": "int" 
+ "ver": "float",
  "screen": "Intro",
  "event": "View",
  "area": "Begin",
- "group": "A", # A or B
+ "group": "A",
  "params": {
-            "isGuest": "Bool", # True, False
-            "Producttype": "string" # Web, App
+            "isGuest": "Bool", 
+            "UserType": "string"
             }
 }
 ```
