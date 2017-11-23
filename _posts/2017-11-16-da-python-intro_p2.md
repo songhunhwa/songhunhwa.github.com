@@ -113,9 +113,9 @@ Source: [AWS](https://aws.amazon.com)
 
 ### 클라이언트 로그 설계
 
-### 실습1. Json Log Parsing
-
-### 실습2. 전처리 with SQL, Pandas
+### [실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/edu1)
+- JSON Client Log Parsing with JSON Library
+- 전처리 with SQL, Pandas Dataframe
 
 
  
