@@ -111,8 +111,28 @@ predictions.show()
 
 Source: [AWS](https://aws.amazon.com)
 
-### 클라이언트 로그 설계
+### 로그 정의/설계
+로그 데이터는 최근 사용자의 사용성 및 행동 패턴을 확인하거나 유저 클러스터링, 모델링 등 다양한 목적으로 사용되는 행동 기반 데이터이다. 로그는 설문과 같은 사용자 응답 및 기억에 의존하는 데이터 수집 방법 대비, 행동을 정확하게 파악/예측할 수 있는 장점이 있다. 또 RDB의 결과론적인 데이터와 달리 특정 결과에 이르는 과정과 흐름을 상세히 파악할 수 있어, 서비스를 개선하는 데 매우 유용한 자료이다. 대신 데이터 용량이 크기 때문에 스토리지 관련 비용/리소스가 발생하고, JSON, CSV, TSV와 같은 비정형 텍스트 형태이므로 기존 RDB와는 다른 수집/처리 시스템과 전문 인력이 요구된다는 단점을 가지고 있다. 
+    
+분석가의 역할 중에 로그 정의 및 설계가 중요한 역할이다. 분석가는 산재된 로그를 분석 목적에 맞게 포멧을 정리하고 로깅할 항목을 우선순위에 맞게 정하는 역할을 한다. 또 로그 발생시 수집할 필드명과 값의 이름을 정의하고 설계하는 업무를 맡는다. 실제 데이터 수집/처리시 정의한 대로 로그가 쌓이므로, 이 단계는 매우 중요한 단계라고 할 수 있다. 더불어 쌓인 로그의 데이터 퀄리티를 관리하는 역할 역시 분석가의 몫이다.
 
+#### 로그 정의 예시
+최근 로그의 형태는 대부분 [JSON(JavaScript Object Notation)](https://www.w3schools.com/js/js_json_intro.asp)이다. Pandas의 Dictionary와 거의 유사하게 Key, Value로 구성되어 있으며, Hierchial 구조를 가질 수 있다. 분석가는 로그 송출시 Json의 Key와 Value에 들어갈 값을 정한다.
+
+```JSON
+{
+ "memid": "int",
+ "screen": "string",
+ "event": "string",
+ "ver": "float",
+ "area": "string",
+ "group": "string",
+ "params": {
+            "var1": "string",
+            "var2": "string"
+            }
+}
+```
 ### [실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/edu1)
 - JSON Client Log Parsing with JSON Library
 - 전처리 with SQL, Pandas Dataframe
