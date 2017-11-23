@@ -104,10 +104,11 @@ predictions.show()
 
 ### AWS 소개
 데이터를 수집하고 저장, 처리 및 분석하는 일련의 과정을 직접 구현하기에 많은 인력과 자원/시간이 소모된다. 이를 쉽게 가능하도록 클라우드 플랫폼 솔루션을 제공하는 것이 [AWS(Amazon Web Service)](https://aws.amazon.com/ko/big-data/)이다. 사용량 비례 과금 방식으로 잘 설계된 저장소와 서버 등 일련의 플랫폼을 저렴하게 사용할 수 있는 것이 가장 큰 장점이다.
+    
+분석가의 입장에서 가장 유용한 서비스는 [EMR](https://aws.amazon.com/ko/emr/)이다. EMR은 Spark, Hadoop, Presto, HBase 등 분석에 유용한 분산프레임워크를 제공한다. 또 Amazon S3 및 Amazon DynamoDB와 같은 저장소와 호환되므로 데이터 저장/입출력/추출/분석 등이 효율적으로 진행된다. 실무에서의 분석은 로컬에서 이뤄지지 않고 Amazon EMR Cluster를 띄워 사용당 과금을 하며, 서버에서 진행된다.     
 
 <img src="/img/lecture/aws_frame.png" width="70%">
 
-분석가의 입장에서 가장 유용한 서비스는 [EMR](https://aws.amazon.com/ko/emr/)이다. EMR은 Spark, Hadoop, Presto, HBase 등 분석에 유용한 분산프레임워크를 제공한다. 또 Amazon S3 및 Amazon DynamoDB와 같은 저장소와 호환되므로 데이터 저장/입출력/추출/분석 등이 효율적으로 진행된다. 실무에서의 분석은 로컬에서 이뤄지지 않고 Amazon EMR Cluster를 띄워 사용당 과금을 하며, 서버에서 진행된다. 
 
 
 
