@@ -64,10 +64,10 @@ Source: [Birendra Kumar Sahu](http://www.grroups.com/blog/how-spark-deconstructe
 #### 스파크 Modules 
 스파크가 최근에 각광을 받게 된 배경에는 스파크가 제공하는 모듈도 영향을 미쳤다. 스파크는 분산처리프레임 위에 **Spark Streaming, SparkSQL, MLlib, GraphX**와 같은 모듈을 제공하여 실시간 수집부터 데이터 추출/전처리, 머신러닝 및 그래프 분석까지 하나의 흐름에 가능하도록 개발되었다. 각 모듈의 특성을 살펴보자.
 
- - ![Spark SQL](https://spark.apache.org/sql/): Spark Wrapper 함수에 SQL 쿼리를 넣어 추출/전처리/분석이 쉽게 가능하도록 지원
- - ![MLlib](https://spark.apache.org/mllib/): 머신러닝 알고리즘 제공 ![(코드 예시)](https://github.com/songhunhwa/MachineLearning_Pyspark)
- - ![Spark Streaming](https://spark.apache.org/streaming/): 실시간 데이터 처리
- - ![GraphX](https://spark.apache.org/graphx/): 그래프 분석 라이브러리
+ - [Spark SQL](https://spark.apache.org/sql/): Spark Wrapper 함수에 SQL 쿼리를 넣어 추출/전처리/분석이 쉽게 가능하도록 지원
+ - [MLlib](https://spark.apache.org/mllib/): 머신러닝 알고리즘 제공 ![(코드 예시)](https://github.com/songhunhwa/MachineLearning_Pyspark)
+ - [Spark Streaming](https://spark.apache.org/streaming/): 실시간 데이터 처리
+ - [GraphX](https://spark.apache.org/graphx/): 그래프 분석 라이브러리
  
  위 4개의 모듈 중에 분석가가 많이 사용하는 것은 Spark SQL과 Mllib이다. 예시 코드를 보자.
 ```python
