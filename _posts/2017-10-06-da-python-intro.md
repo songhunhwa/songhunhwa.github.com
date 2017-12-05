@@ -43,23 +43,13 @@ author: songhunhwa
 - (실습)Json 및 Text 형태의 로그 데이터 Parsing
 - (실습)SQL 및 Numpy, Pandas를 통한 전처리 
 	
-#### 2강: 유저 Funnel 분석을 통해 이탈 구간 개선
+#### [2강: 유저 Funnel 분석을 통해 이탈 구간 개선](https://songhunhwa.github.io/2017/12/05/da-python-funnel.html)  
 - 문제 정의 및 가설 정립
-	- 주요 구간을 어떻게 선정할 것인가?
-	- Conversion Rate을 어떻게 구할 것인가?
-	- 예상되는 Bottleneck 구간은 어디인가?
-- JSON 로그 데이터 Parsing 및 전처리
-	- JSON이란?
-	- Python 라이브러리를 이용한 JSON Parsing
-	- Pandas로 데이터셋을 깔끔하게 정리하기 
-- 탐색적 데이터 분석 (EDA)
-	- Pandas를 통해 기초 통계 산출하기
-	- Groupby 집계함수를 통해 주요 유저 Path를 확인하기
-	- 변수별 분포와 상관관계 구하기
-- 세그멘테이션 & 그룹 타깃팅
-	- 초간단 세그멘테이션을 통한 가설 수립
-	- Kmeans를 통한 클러스터링
-		
+- 분석 Frame 구성
+- 데이터 로딩 및 전처리
+- 탐색적 데이터 분석 / 클러스터링
+- 시각화 및 리포팅
+
 #### 3강: 랭킹 및 추천 로직 Prototype 구축
 - 문제 정의 및 가설 수립
 	- 랭킹과 추천을 위한 목적 정의
