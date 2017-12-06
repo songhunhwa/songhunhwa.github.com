@@ -1,5 +1,5 @@
 ---
-title: "강의 커리"
+title: "강의 커리큘럼"
 layout: post
 author: songhunhwa
 ---
@@ -29,7 +29,7 @@ author: songhunhwa
 ### 커리큘럼
 강의 커리큘럼은 총 8회로 진행되며, 5회의 강의/실습과 3회의 프로젝트로 진행된다. 상황에 따라 일부 내용은 변동될 수 있다.
 
-#### [1강 Part 1: 분석실무에 대한 이해](https://songhunhwa.github.io/2017/10/24/da-python-concept.html)
+#### [1강 Part 1: 분석실무에 대한 이해](https://songhunhwa.github.io/2017/10/24/da-python-intro_p1.html)
 - 분석 주제 예시
 - 분석 프로세스
 - 팀구성 및 역할
