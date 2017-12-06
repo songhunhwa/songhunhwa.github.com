@@ -1,5 +1,5 @@
 ---
-title: "강의 정보"
+title: "강의 커리"
 layout: post
 author: songhunhwa
 ---
