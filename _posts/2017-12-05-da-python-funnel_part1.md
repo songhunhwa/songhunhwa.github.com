@@ -1,5 +1,5 @@
 ---
-title: "2회차: 유저 Funnel 분석을 통해 이탈 구간 개선"
+title: "2회차 Part1: 유저 Funnel 분석을 통해 이탈 구간 개선"
 layout: post
 author: songhunhwa
 ---
