@@ -48,7 +48,7 @@ Source: [Impact Hub](https://bern.impacthub.net/event/lean-lab-learn-about-and-p
 
 #### 일정
 
-### 제한점
+#### 제한점
 
 
  
