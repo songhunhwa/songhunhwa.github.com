@@ -49,8 +49,11 @@ Source: [Wikipedia](https://ko.wikipedia.org/wiki/MECE)
 
 예를 들어, 특정 서비스의 건강도를 측정하는 지표를 계획한다고 가정해보자. 서비스 건강도를 일별 방문자수, 재방문율, 구매율 및 재구매율 등 서로 독립적인 하위 지표로 구성할 수 있으며(ME), 건강도를 나타내는 하위 지표를 누락없이 반영하여(CE) 건강도라는 최종적인 상태를 측정할 수 있을 것이다. 많은 논의를 통해 서로 독립적이며 누락없는 하위 지표를 구성한후 그 지표가 건강도를 잘 대표하고 있는지(타당도), 시간의 흐름에 관계 없이 Robust한 결과를 보이는지(신뢰도) 등 종합적으로 고려하여 지표를 설정하고 Tracking 하는 업무가 분석가의 주요 업무중 하나이다. 
    
-MECE 철학을 이용하여 
+MECE 철학에 근거하여, Logic Tree를 구성해보자. Logic Tree는 
 
+<img src="/img/lecture/logic_tree.png" width="30%">
+
+Source: [DongaBiz](http://www.dongabiz.com)
 
 #### 목적 및 세부 달성 목표
 
