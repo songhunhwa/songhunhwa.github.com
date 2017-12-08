@@ -49,11 +49,17 @@ Source: [Wikipedia](https://ko.wikipedia.org/wiki/MECE)
 
 예를 들어, 특정 서비스의 건강도를 측정하는 지표를 계획한다고 가정해보자. 서비스 건강도를 일별 방문자수, 재방문율, 구매율 및 재구매율 등 서로 독립적인 하위 지표로 구성할 수 있으며(ME), 건강도를 나타내는 하위 지표를 누락없이 반영하여(CE) 건강도라는 최종적인 상태를 측정할 수 있을 것이다. 많은 논의를 통해 서로 독립적이며 누락없는 하위 지표를 구성한후 그 지표가 건강도를 잘 대표하고 있는지(타당도), 시간의 흐름에 관계 없이 Robust한 결과를 보이는지(신뢰도) 등 종합적으로 고려하여 지표를 설정하고 Tracking 하는 업무가 분석가의 주요 업무중 하나이다. 
    
-MECE 철학에 근거하여, Logic Tree를 구성해보자. Logic Tree는 
+MECE 철학에 근거하여 Logic Tree를 구성해보자. Logic Tree 모습은 마치 머신러닝 기법인 Decision Tree의 유사하다. 최종 목적을 세부적인 목적으로 분류해가면서 문제를 나누는 데 도움을 주는 방법론이다. 상위 단계에서 하위 단계로 구분되어 내려갈 때 MECE 철학에 근거해 잘게 쪼개질 때까지 진행하는 것이 중요하다.  
 
-<img src="/img/lecture/logic_tree.png" width="30%">
+<img src="/img/lecture/logic_tree.png" width="70%">
 
 Source: [DongaBiz](http://www.dongabiz.com)
+
+지금까지 배운 MECE와 Logic Tree를 이용해, 유저 사용성 분석의 목적에 맞는 분석 Frame을 작성/실습해보자. 기본적인 틀은 아래와 같을 것이다.
+
+
+
+
 
 #### 목적 및 세부 달성 목표
 
