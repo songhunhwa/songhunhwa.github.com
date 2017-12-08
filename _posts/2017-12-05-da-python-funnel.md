@@ -40,7 +40,7 @@ Source: [Impact Hub](https://bern.impacthub.net/event/lean-lab-learn-about-and-p
  - 가설2: **그룹 조건에 따라 전환율이나 이탈율에서 통계적으로 유의미한 차이**를 보일 것이다.
  - 이유2: 그룹 조건은 행동 패턴을 결정짓는 주요 요인중 하나이므로 위와 같은 결과가 나올 것. (단, 그룹 세분화가 진행되기 전이므로 다소 오픈 결론으로 유지)
  
-<img src="/img/lecture/ouput_exam.png" width="45%">
+<img src="/img/lecture/output.png" width="70%">
 
  
 
