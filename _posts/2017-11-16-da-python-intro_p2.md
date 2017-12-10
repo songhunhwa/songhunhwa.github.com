@@ -102,7 +102,7 @@ predictions.show()
 
 ```
 
-Source: [Songhunhwa's Pyspark MLlib](https://github.com/songhunhwa/MachineLearning_Pyspark)
+Source: [Songhunhwa's Github](https://github.com/songhunhwa/MachineLearning_Pyspark)
 
 ### AWS 소개
 데이터를 수집하고 저장, 처리 및 분석하는 일련의 과정을 직접 구현하기에 많은 인력과 자원/시간이 소모된다. 이를 쉽게 가능하도록 클라우드 플랫폼 솔루션을 제공하는 것이 [AWS(Amazon Web Service)](https://aws.amazon.com/ko/big-data/)이다. 사용량 비례 과금 방식으로 잘 설계된 저장소와 서버 등 일련의 플랫폼을 저렴하게 사용할 수 있는 것이 가장 큰 장점이다.
