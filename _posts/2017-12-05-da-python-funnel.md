@@ -92,7 +92,7 @@ Source: [DongaBiz](http://www.dongabiz.com)
  - 부적절한 분포의 변수 존재하는 경우: log, sqrt 등 함수로 분포 변환
  - 측정 단위(scale)이 차이가 클 경우: Scaling with StarndardScale or MinMaxScaler
 
-#### [데이터 전처리 실습]("https://github.com/songhunhwa/songhunhwa.github.com/blob/master/tutorial/totorial_02")
+#### [데이터 전처리 실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 실제 Funnel 분석에 사용할 데이터를 불러와서 간단한 전처리 실습을 진행해보자. 이번 전처리 내용은 비교적 간단한 편이며, 전처리 진행 과정은 아래와 같다.
  - 변수별 이상치 탐색
  - 확장자명 통일
