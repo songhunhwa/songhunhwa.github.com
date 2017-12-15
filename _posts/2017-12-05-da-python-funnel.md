@@ -81,6 +81,14 @@ Source: [DongaBiz](http://www.dongabiz.com)
  - 분석 목적에 맞지 않은 데이터 형태 및 분포
 
 위에 나열된 내용 이외에도 예상하지 못한 이유로 인해 결측치 및 이상치 등이 쉽게 발생할 수 있으며, 이러한 문제가 있는 데이터를 전처리하지 않고 분석 혹은 모델링 등의 업무를 진행할 경우 치명적인 문제/오류를 발생시킬 수 있으므로 매우 주의할 필요가 있다. 일반적으로 각 문제점별 데이터 전처리를 하는 방식은 아래와 같다. 
- - 데이터 Type, Label 등이 일관적이지 않은 경우: 프로그램에서 제공하는 함수를 통해 일괄적으로 변경 (예, SQL: Cast, Python: astype())
- - Missing Value: 수치형인 경우 Mean, Median 등 대푯값으로 채우거나 실수 예측 모델링 활용 (예, Linear Regression)
- - Errors, Typo: 텍스트  
+ - 데이터 Type, Label 등이 일관적이지 않은 경우
+ 	- 프로그램에서 제공하는 함수를 통해 일괄적으로 변경 (예, SQL: Cast, Python: astype())
+ - Missing Value
+	- 수치형인 경우 Mean, Median 등 대푯값으로 채우거나 실수 예측 모델링 활용 (예, Linear Regression)
+	- 카테고리형인 경우 Mode로 채우거나 분류 예측 모델링 활용 (예, Logistic Regression)
+ - Errors, Typo 발생의 경우
+ 	- 텍스트 처리 함수 활용 (예, Python: str.replace())
+ - 이상치(outlier)
+ 	- IQR, Z-score, MAD 방식으로 이상치 제거
+ - 
+ 	
