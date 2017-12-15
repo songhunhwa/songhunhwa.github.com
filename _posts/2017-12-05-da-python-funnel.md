@@ -91,3 +91,11 @@ Source: [DongaBiz](http://www.dongabiz.com)
  - 불필요 변수가 많은 경우: PCA 등으로 차원 축소하거나 변수 중요도 파악후 불필요 변수 제거
  - 부적절한 분포의 변수 존재하는 경우: log, sqrt 등 함수로 분포 변환
  - 측정 단위(scale)이 차이가 클 경우: Scaling with StarndardScale or MinMaxScaler
+
+#### [데이터 전처리 실습]("https://github.com/songhunhwa/songhunhwa.github.com/blob/master/tutorial/totorial_02")
+실제 Funnel 분석에 사용할 데이터를 불러와서 간단한 전처리 실습을 진행해보자. 이번 전처리 내용은 비교적 간단한 편이며, 전처리 진행 과정은 아래와 같다.
+ - 변수별 이상치 탐색
+ - 확장자명 통일
+ - 날짜를 pandas date 형태로 변환
+
+ 
