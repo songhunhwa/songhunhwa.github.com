@@ -60,7 +60,7 @@ Source: [Wikipedia](https://ko.wikipedia.org/wiki/MECE)
 
 Source: [DongaBiz](http://www.dongabiz.com)
 
-#### 실습. UX 사용성 테스트에 맞는 Logic Tree 설계
+#### [실습. UX 사용성 테스트에 맞는 Logic Tree 설계](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 지금까지 배운 MECE와 Logic Tree를 이용해, 유저 사용성 분석의 목적에 맞는 분석 Frame을 작성/실습해보자. 아래 예제를 참고하여 파워포인트나 키노트, 혹은 메모장 등 프로그램을 실행시켜 최종 목적부터 세부적인 목적까지 직접 작성해보고 Feedback을 구해보자. 반드시 박스와 선을 이용할 필요는 없다.
 
 <img src="/img/lecture/ux_logic_tree.png" width="80%">
