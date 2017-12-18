@@ -61,85 +61,10 @@ Source: [Birendra Kumar Sahu](http://www.grroups.com/blog/how-spark-deconstructe
 
 **Spark 실습**
  - [Download Page](http://spark.apache.org/downloads.html)
- - [Github](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_01)
+ - [Github Page for Tutorial](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_01)
  - SparkContext 생성
  - DataFrame 생성 및 추출
  - 전처리 및 분석
-```python
-# import modules
-from pyspark.sql import SQLContext
-from pyspark.sql.functions import *
-import pandas as pd
-import numpy as np
-
-sc = SparkContext()
-sqlContext = SQLContext(sc)
-
-# read the csv with library
-df = sqlContext.read.format('com.databricks.spark.csv')\
-					.options(header='true', inferSchema='true')\
-					.load('/Users/woowahan/Documents/Python/DS_Ext_School/tutorial_01/doc_use_log.csv')\
-					.cache()
-
-df.printSchema()
-df.count()
-
-# convert the df to tmp table (as if it's in database)
-df.registerTempTable("df_tmp")
-
-# extract data from table with sql
-df1 = sqlContext.sql("select ismydoc, actiontype, sessionid, datetime from df_tmp where ismydoc = true")
-
-# other sql examples
-sqlContext.sql("select datetime, count(1) from df_tmp group by datetime order by datetime").show()
-sqlContext.sql("select count(distinct sessionid) as session_cnt from df_tmp where documentposition = 'MYPOLARISDRIVE' group by ext having count(distinct sessionid) ").show()
-
-print(df.count())
-print(df1.count())
-
-## Lazy Execution
-df2 = sqlContext.sql("select * from df_tmp")
-
-df2_pdf = df2.select("sessionid", "ext").filter(" ext == 'PDF' or ext = 'DOC'").dropDuplicates().cache()
-df2.fil.distinct().count()
-
-df2_min_date = df2.groupby("sessionid").agg(min("datetime").alias("min_date"))
-df2_min_date.show()
-
-df2_join = df2_pdf.join(df2_min_date, "sessionid", "left")
-df2_join.show()
-
-df2_join1 = df2_join.groupby("min_date", "ext").agg(count("sessionid").alias("cnt"))
-
-df2_join1.describe().show()
-
-# Pandas
-df2_pd = df2.toPandas()
-df2_pd.groupby("ext")['sessionid'].count().sort_values(ascending=False)
-df2_pd['ext'].value_counts()
-
-# other useful functions
-fillna()
-dropDuplicates()
-drop()
-distinct()
-countDistinct()
-withColumn()
-withColumnRenamed()
-pivot()
-sort()
-collect_list()
-collect_set()
-get_json_object()
-from_unixtime()
-to_date()
-sample(False, 0.1, 123) 
-cube()
-cache()
-
-# Reference: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html
-
-```
 
 #### 스파크 Modules 
 스파크가 최근에 각광을 받게 된 배경에는 스파크가 제공하는 모듈도 영향을 미쳤다. 스파크는 분산처리프레임 위에 **Spark Streaming, SparkSQL, MLlib, GraphX**와 같은 모듈을 제공하여 실시간 수집부터 데이터 추출/전처리, 머신러닝 및 그래프 분석까지 하나의 흐름에 가능하도록 개발되었다. 각 모듈의 특성을 살펴보자.
@@ -149,7 +74,8 @@ cache()
  - [Spark Streaming](https://spark.apache.org/streaming/): 실시간 데이터 처리
  - [GraphX](https://spark.apache.org/graphx/): 그래프 분석 라이브러리
  
- 위 4개의 모듈 중에 분석가가 많이 사용하는 것은 Spark SQL과 Mllib이다. 예시 코드를 보자.
+ 위 4개의 모듈 중에 분석가가 많이 사용하는 것은 Spark SQL과 Mllib이다. 아래 예시 코드를 보자.
+
 ```python
 ## 데이터 추출 및 전처리 with Spark SQL
 from pyspark.sql.funtions import *
