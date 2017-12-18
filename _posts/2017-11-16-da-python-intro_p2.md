@@ -52,7 +52,7 @@ Source: [Research Computing](http://researchcomputing.github.io/meetup_spring_20
 Source: [Duchess france](http://www.duchess-france.org/starting-with-spark-in-practice/)
 
 **Lazy Execution**
- - Transfrom: `filter`, `select`, `drop`, `join`
+ - Transfrom: `filter`, `select`, `drop`, `join`, `dropDuplicates`, `distinct`, `withColumn`, `pivot`, `get_json_object`, `sample`
  - Action: `count`, `collect`, `show`, `head`, `take`
 
 <img src="/img/lecture/spark_le.png" width="70%">
