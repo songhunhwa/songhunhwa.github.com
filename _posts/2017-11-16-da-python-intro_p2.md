@@ -66,6 +66,44 @@ Source: [Birendra Kumar Sahu](http://www.grroups.com/blog/how-spark-deconstructe
  - DataFrame 생성 및 추출
  - 전처리 및 분석
 
+```python
+# import modules
+from pyspark.sql import SQLContext
+from pyspark.sql.functions import *
+
+sc = SparkContext()
+sqlContext = SQLContext(sc)
+
+# read the csv with library
+df = sqlContext.read.format('com.databricks.spark.csv')\
+					.options(header='true', inferSchema='true')\
+					.load('/Users/woowahan/Documents/Python/DS_Ext_School/tutorial_01/doc_use_log.csv')
+
+# convert the df to tmp table (as if it's in database)
+df.registerTempTable("df_tmp")
+
+# extract data from table with sql
+df1 = sqlContext.sql("select ismydoc, actiontype, sessionid, datetime from df_tmp where ismydoc = true")
+
+## Lazy Execution
+df2 = sqlContext.sql("select * from df_tmp")
+
+df2_pdf = df2.select("sessionid", "ext").filter(" ext == 'PDF' or ext = 'DOC'").dropDuplicates().cache()
+df2.fil.distinct().count()
+
+df2_min_date = df2.groupby("sessionid").agg(min("datetime").alias("min_date"))
+df2_min_date.show()
+
+df2_join = df2_pdf.join(df2_min_date, "sessionid", "left")
+df2_join.show()
+
+df2_join1 = df2_join.groupby("min_date", "ext").agg(count("sessionid").alias("cnt"))
+
+df2_join1.describe().show()
+
+# Pandas
+df2_pd = df2.toPandas()
+```
 #### 스파크 Modules 
 스파크가 최근에 각광을 받게 된 배경에는 스파크가 제공하는 모듈도 영향을 미쳤다. 스파크는 분산처리프레임 위에 **Spark Streaming, SparkSQL, MLlib, GraphX**와 같은 모듈을 제공하여 실시간 수집부터 데이터 추출/전처리, 머신러닝 및 그래프 분석까지 하나의 흐름에 가능하도록 개발되었다. 각 모듈의 특성을 살펴보자.
 
