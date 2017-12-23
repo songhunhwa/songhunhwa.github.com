@@ -94,8 +94,10 @@ Source: [DongaBiz](http://www.dongabiz.com)
 
 #### [데이터 전처리 실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 실제 Funnel 분석에 사용할 데이터를 불러와서 간단한 전처리 실습을 진행해보자. 이번 전처리 내용은 비교적 간단한 편이며, 전처리 진행 과정은 아래와 같다.
- - 변수별 이상치 탐색
+ - data type 형태로 변환
+ - 결측치 처리
  - 확장자명 통일
- - 날짜를 pandas date 형태로 변환
-
+ - 신규 id 부여
+ - 대소문자 처리
+ 
  
