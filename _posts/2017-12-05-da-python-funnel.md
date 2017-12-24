@@ -92,7 +92,7 @@ Source: [DongaBiz](http://www.dongabiz.com)
  - 부적절한 분포의 변수 존재하는 경우: log, sqrt 등 함수로 분포 변환
  - 측정 단위(scale)이 차이가 클 경우: Scaling with StarndardScale or MinMaxScaler
 
-#### [데이터 전처리 실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
+#### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 실제 Funnel 분석에 사용할 데이터를 불러와서 간단한 전처리 실습을 진행해보자. 이번 전처리 내용은 비교적 간단한 편이며, 전처리 진행 과정은 아래와 같다.
  - data type 형태로 변환
  - 결측치 처리
@@ -101,9 +101,11 @@ Source: [DongaBiz](http://www.dongabiz.com)
  - 대소문자 처리
  
 ### 데이터 분석
-데이터 전처리 과정이 완료되면 탐색적 데이터 분석을 진행한다. 탐색적 분석은 모델링을 하기 위한 준비 단계이며, 만약 목적이 달성되었다면, 종종 이 단계를 끝으로 업무가 완료되는 경우도 있다. 탐색적 데이터 분석의 주요 목적은 수집된 데이터셋을 전반적으로 이해하는 것이며, 이를 위해 시각화 기법, 통계 분석, Feature Selection 등 다양한 기법이 사용된다. 
+데이터 전처리 과정이 완료되면 데이터 분석 과정을 진행한다. 1강에서 언급한 바와 같이, 데이터 분석은 매우 넓은 범위를 포괄하는 의미이다. 일반적으로 EDA라고 불리는 탐색적 데이터 분석을 위해 전통적인 통계 분석, 기계학습(Feature Engineering), 시각화 등 다양한 기법이 활용되며 경우에 따라서 EDA를 끝으로 업무/프로젝트가 완료되는 경우도 많다. 
+   
+이번 케이스의 
 
-#### [탐색적 데이터 분석 실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
+#### [실습. 탐색적 데이터 분석](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 
 
 
