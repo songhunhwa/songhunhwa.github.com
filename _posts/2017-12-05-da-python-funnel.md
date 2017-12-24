@@ -119,13 +119,7 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 
 
 ### 리포트 작성
-
-
-
-
-
-#### [실습. 탐색적 데이터 분석](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
-
+ㅌㅌㅌ
 
 
 
