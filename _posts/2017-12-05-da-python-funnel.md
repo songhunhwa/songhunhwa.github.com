@@ -105,6 +105,7 @@ Source: [DongaBiz](http://www.dongabiz.com)
 
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 실제 Funnel 분석에 사용할 데이터를 불러와서 간단한 전처리 실습을 진행해보자. 이번 전처리 내용은 비교적 간단한 편이며, 전처리 진행 과정은 아래와 같다.
+ - 실습 파일 및 변수 소개
  - data type 형태로 변환
  - 결측치 처리
  - 확장자명 통일
@@ -119,17 +120,14 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 이번 가상 케이스의 경우 EDA만을 통해 원하는 목적을 달성할 수 있으므로 EDA를 끝으로 분석 업무가 마무리 될 예정이다. 보통 이 단계쯤에서는 목적을 다시 한번 상기하는 것이 도움이 될 수 있다. 초반에 설정한 목적을 확인하고 아래 과정을 실습해보자.
 
 - 일별 주요 통계
-- 변수별 주요 특성
-- 구간별 전환율 및 이탈율
-- 이용 형태별 전환율, 이탈율 패턴의 차이
-- 이탈에 영향을 미치는 주요 변수 추출
-- 시사점 및 개선안
+- 변수별 특성
+- 구간별 전환율
+- 클러스터 별 전환율 차이
 
 #### [실습. 데이터 분석](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 
-
 ### 리포트 작성
-ㅌㅌㅌ
+
 
 
 
