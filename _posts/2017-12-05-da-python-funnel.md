@@ -53,7 +53,7 @@ Source: [Wikipedia](https://ko.wikipedia.org/wiki/MECE)
 
 예를 들어, 특정 서비스의 건강도를 측정하는 지표를 계획한다고 가정해보자. 서비스 건강도를 일별 방문자수, 재방문율, 구매율 및 재구매율 등 서로 독립적인 하위 지표로 구성할 수 있으며(ME), 건강도를 나타내는 하위 지표를 누락없이 반영하여(CE) 건강도라는 최종적인 상태를 측정할 수 있을 것이다. 많은 논의를 통해 서로 독립적이며 누락없는 하위 지표를 구성한후 그 지표가 건강도를 잘 대표하고 있는지(타당도), 시간의 흐름에 관계 없이 Robust한 결과를 보이는지(신뢰도) 등 종합적으로 고려하여 지표를 설정하고 Tracking 하는 것은 분석 Frame 설정의 한 예시이다.
  
-#### Logice Tree
+#### Logic Tree
 이번엔 Logic Tree에 대해 알아보자. Logic Tree 모습은 마치 머신러닝 기법인 Decision Tree의 유사하다. 최종 목적을 세부적인 목적으로 분류하는 데 도움을 주는 방법론이다. 상위 단계에서 하위 단계로 구분되어 내려갈 때 MECE 철학에 근거해 잘게 쪼개질 때까지 진행하는 것이 중요하다.  
 
 <img src="/img/lecture/logic_tree.png" width="70%">
@@ -64,6 +64,17 @@ Source: [DongaBiz](http://www.dongabiz.com)
 지금까지 배운 MECE와 Logic Tree를 이용해, 유저 사용성 분석의 목적에 맞는 분석 Frame을 작성/실습해보자. 아래 예제를 참고하여 파워포인트나 키노트, 혹은 메모장 등 프로그램을 실행시켜 최종 목적부터 세부적인 목적까지 직접 작성해보고 Feedback을 구해보자. 반드시 박스와 선을 이용할 필요는 없다.
 
 <img src="/img/lecture/ux_logic_tree.png" width="80%">
+
+
+- Others subjects/project examples 
+	- Marketing Promotion/Event Targeting 
+	- Brand Reputation/Image Enhancement
+	- Personalized Contents/Service (Recommendation System)
+	- Revenue/Subscription Improvement Targeting
+	- Abusing Issues
+	- Auto Responses/feedback for CS
+	- Indicators development (Risk Indicators, etc)
+	- Any topics or subjects 
 
 #### 추가 고려 요소
 데이터가 입수되고 앞에서 살펴본 문제 정의, 가설 설정 및 분석 Frame 단계를 완료하였다면 분석 준비가 완료되었다고 볼 수 있다. 다만, 실무에서는 추가로 고려해야할 사항이 더 있다. 주로 Management와 관련된 부분으로, PM 확은 Team Manager, 분석 요청자와 아래와 같은 사항을 논의할 필요가 있다. 이미 언급한 대로, 분석 프로젝트는 분석가 혹은 분석팀 자체적으로 진행되는 경우가 없으므로 프로젝트를 둘러싼 외부적 상황에 따라 크게 영향 받기도 한다. 따라서 아래와 같은 고려 사항을 소홀히하지 않도록 해야 불필요한 리소스 낭비를 최소화할 수 있다.
