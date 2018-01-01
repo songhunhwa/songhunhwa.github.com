@@ -65,16 +65,14 @@ Source: [DongaBiz](http://www.dongabiz.com)
 
 <img src="/img/lecture/ux_logic_tree.png" width="80%">
 
-
-- Others subjects/project examples 
-	- Marketing Promotion/Event Targeting 
-	- Brand Reputation/Image Enhancement
-	- Personalized Contents/Service (Recommendation System)
-	- Revenue/Subscription Improvement Targeting
-	- Abusing Issues
-	- Auto Responses/feedback for CS
-	- Indicators development (Risk Indicators, etc)
-	- Any topics or subjects 
+- 다른 분석/주제 예시 	
+	- 마케팅 프로모션/이벤트 타깃팅 
+	- 브랜드 위상/이미지 측정 및 제고
+	- 개인화 컨텐츠/서비스 (Recommendation System)
+	- 매출/유료 결제자 상승 예측 모델링/타깃팅
+	- 어뷰징 사례 예측/분류 모델링
+	- 텍스트 분석/토픽 모델링
+	- 신규 지표 개발 
 
 #### 추가 고려 요소
 데이터가 입수되고 앞에서 살펴본 문제 정의, 가설 설정 및 분석 Frame 단계를 완료하였다면 분석 준비가 완료되었다고 볼 수 있다. 다만, 실무에서는 추가로 고려해야할 사항이 더 있다. 주로 Management와 관련된 부분으로, PM 확은 Team Manager, 분석 요청자와 아래와 같은 사항을 논의할 필요가 있다. 이미 언급한 대로, 분석 프로젝트는 분석가 혹은 분석팀 자체적으로 진행되는 경우가 없으므로 프로젝트를 둘러싼 외부적 상황에 따라 크게 영향 받기도 한다. 따라서 아래와 같은 고려 사항을 소홀히하지 않도록 해야 불필요한 리소스 낭비를 최소화할 수 있다.
@@ -127,7 +125,9 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 #### [실습. 데이터 분석](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_02)
 
 ### 리포트 작성
-분석과정을 마무리 했다면 리포트를 작성하는 과정을 시작한다. 이 과정을 시작하기 전에 분석 초반에 설정한 **목적과 가설, 프레임**을 다시 상기하고 진행하는 것이 유용하다. 리포트 과정은 분석 결과를 중심으로, 
+분석과정을 마무리 했다면 리포트를 작성하는 과정을 시작한다. 이 과정을 시작하기 전에 분석 초반에 설정한 **목적과 가설, 프레임**을 다시 상기하고 진행하는 것이 유용하다. 리포트는 과정보다는 분석 결과를 중심으로 기술하고, 향후 개선방향과 분석가가 발견한 인사이트를 언급하는 것이 효과적이다.
+
+- 목적: 
 
 
 
