@@ -186,6 +186,7 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 	
 	- DOC 그룹
 		- Per_dir -> inproduct_web 으로 전환율은 양호하나, inproduct web -> mob 구간의 이탈이 두드러짐
+		
 	<img src="/img/lecture/doc_conv.png" width="80%">
 
 	- PDF 그룹
