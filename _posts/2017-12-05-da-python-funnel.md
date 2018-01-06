@@ -149,53 +149,56 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 #### 리포트 본론 단계
 본론 단계에서는 목차에 맞게 중요도가 높은 결과를 기준으로 기술하며, 만약 일회성(Ad-hoc) 분석이 아닌 Tracking 분석일 경우는 스토리텔링 방식으로 기술하는 것이 효과적이다. (예를 들어, 지난 해와 올해의 주요 지표 변화와 사건/이슈를 같이 첨부하여 기술)
 - **Summary**
-	- ㅌㅌㅌㅌ
-	- ㅌㅌㅌㅌ
-	- ㅌㅌㅌㅌ
+	- xxx
+	- xxx
+	- xxx
 
 - **일별 주요 통계**
 	- 활성화 세션의 경우 주말에 감소하고 주중에 증가하는 트렌드 보임
 	<img src="/img/lecture/session.png" width="80%">
 	
-	
 	- 확장자별 1 tier에는 pdf, xls, doc가 포지셔닝되며, 2 tier에는 hwp, ppt가 포함됨
 	<img src="/img/lecture/daily_ext.png" width="80%">
 	
-	
 	- 문서의 이용 위치는 'other app' 이 압도적으로 높음
 	<img src="/img/lecture/daily_pos.png" width="80%">
-	
-	
+		
 	- 스크린별로 사용성 파악 결과, 메인(main) 화면이 가장 많이 노출되며 다음 화면(pub_dir or per_dir)으로 넘어가는 경우 많지 않음
 	<img src="/img/lecture/daily_screen.png" width="80%"> 
 
-
-
----
 - **변수별 특성**
+	- xxx
+	- xxx
+	
 - **구간별 전환율**
+	-  전환율이 가장 낮은 구간(=이탈이 가장 높은 구간)은 구매정보 페이지에서 구매 완료 페이지로 전환하는 구간임(3.7%)
+	-  제품내 웹 -> 앱으로 전환하는 구간은 전환율이 양호함(74%)
+	<img src="/img/lecture/funnel_conv.png" width="80%">
+	<img src="/img/lecture/funnel_conv_churn.png" width="80%">
 
-<img src="/img/lecture/funnel_conv.png" width="80%">
+- **클러스터링**
+	- 전체를 그룹으로 세분화했을 경우 전환율의 차이를 파악하고 우선순위에 따른 Targeting 위해 k-means 클러스터링 진행함
+	- 확장자 변수를 이용하여 아래와 같이 4개의 그룹으로 세분화함
+	<img src="/img/lecture/cluster_12.png" width="80%">
+	<img src="/img/lecture/cluster_34.png" width="80%">
 
-<img src="/img/lecture/funnel_conv_churn.png" width="80%">
+- **클러스터 별 전환율 차이**
+	- XLS 그룹: Per_dir -> inproduct_web 으로 전환하는 구간이 bottelneck임
+	<img src="/img/lecture/xls_conv.png" width="80%">
+	
+	- DOC 그룹: Per_dir -> inproduct_web 으로 전환율은 양호하나, inproduct web -> mob 구간의 이탈이 두드러짐
+	<img src="/img/lecture/doc_conv.png" width="80%">
 
-- 클러스터별 전환율 차이
+	- PDF 그룹: 전반적인 구간에서 전화율이 고르게 낮은 편임
+	<img src="/img/lecture/pdf_conv.png" width="80%">
 
-<img src="/img/lecture/cluster_12.png" width="80%">
+	- HWP 그룹: DOC 그룹과 유사하게 inproduct web -> mob 구간의 이탈이 심한 경향을 보임
+	<img src="/img/lecture/hwp_conv.png" width="80%">
 
-<img src="/img/lecture/cluster_34.png" width="80%">
-
-<img src="/img/lecture/xls_conv.png" width="80%">
-
-<img src="/img/lecture/doc_conv.png" width="80%">
-
-<img src="/img/lecture/pdf_conv.png" width="80%">
-
-<img src="/img/lecture/hwp_conv.png" width="80%">
-
-<img src="/img/lecture/wg_mean_cluster.png" width="80%">
-
-
+ - **전환율 개선 Target 그룹**
+	- 구간별 가중치를 고려할 경우, 평균 전환율이 가장 낮은 구간은 pdf 사용그룹이므로 개선이 가장 시급한 그룹으로 고려됨
+	<img src="/img/lecture/wg_mean_cluster.png" width="80%">
+	
 #### 리포트 결론 단계
 - 시사점 및 
 
