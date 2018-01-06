@@ -159,17 +159,16 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 	
 	- 확장자별 1 tier에는 pdf, xls, doc가 포지셔닝되며, 2 tier에는 hwp, ppt가 포함됨
 	<img src="/img/lecture/daily_ext.png" width="70%">
-
-	- 문서의 이용 위치는 'other app' 이 압도적으로 높음 (외부앱을 통해 자사 앱으로 유입되는 패턴이 주요)
+	
+	- 문서의 이용 위치는 'other app' 이 압도적으로 높음
 	<img src="/img/lecture/daily_pos.png" width="70%">
 	
 	- 스크린별로 사용성 파악 결과, 메인(main) 화면이 가장 많이 노출되며 다음 화면(pub_dir or per_dir)으로 넘어가는 경우 많지 않음
 	<img src="/img/lecture/daily_screen.png" width="70%"> 
-	<img src="/img/lecture/daily_screen_heat.png" width="70%">
 
 
 
-
+---
 - 변수별 특성
 - 구간별 전환율
 
