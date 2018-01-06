@@ -149,18 +149,25 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 #### 리포트 본론 단계
 본론 단계에서는 목차에 맞게 중요도가 높은 결과를 기준으로 기술하며, 만약 일회성(Ad-hoc) 분석이 아닌 Tracking 분석일 경우는 스토리텔링 방식으로 기술하는 것이 효과적이다. (예를 들어, 지난 해와 올해의 주요 지표 변화와 사건/이슈를 같이 첨부하여 기술)
 - Summary
-ㅌㅌㅌㅌㅌㅌ
+	- ㅌㅌㅌㅌ
+	- ㅌㅌㅌㅌ
+	- ㅌㅌㅌㅌ
 
 - 일별 주요 통계
-<img src="/img/lecture/session.png" width="50%">
+	- 활성화 세션의 경우 주말에 감소하고 주중에 증가하는 트렌드 보임
+	<img src="/img/lecture/session.png" width="70%">
+	
+	- 확장자별 1 tier에는 pdf, xls, doc가 포지셔닝되며, 2 tier에는 hwp, ppt가 포함됨
+	<img src="/img/lecture/daily_ext.png" width="70%">
 
-<img src="/img/lecture/daily_ext.png" width="50%">
+	- 문서의 이용 위치는 'other app' 이 압도적으로 높음 (외부앱을 통해 자사 앱으로 유입되는 패턴이 주요)
+	<img src="/img/lecture/daily_pos.png" width="70%">
+	
+	- 스크린별로 사용성 파악 결과, 메인(main) 화면이 가장 많이 노출되며 다음 화면(pub_dir or per_dir)으로 넘어가는 경우 많지 않음
+	<img src="/img/lecture/daily_screen.png" width="70%"> 
+	<img src="/img/lecture/daily_screen_heat.png" width="70%">
 
-<img src="/img/lecture/daily_pos.png" width="50%">
 
-<img src="/img/lecture/daily_screen.png" width="50%">
-
-<img src="/img/lecture/daily_screen_heat.png" width="50%">
 
 
 - 변수별 특성
