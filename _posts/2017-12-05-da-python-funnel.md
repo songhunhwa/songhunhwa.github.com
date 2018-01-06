@@ -133,12 +133,12 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 
 #### 리포트 도입 단계
 일반적으로 리포트의 도입 단계에는 분석 배경과 목적/가설, 목차 등이 포함된다. 초반에 작성한 내용을 토대로 아래와 같이 간단히 정리할 수 있다.  
-- 배경
+- **배경**
 	- 기획팀 요청으로 유저의 시나리오 전환이 잘 이루어지고 있는지 파악과 개선이 필요함 
-- 목적
+- **목적**
 	- Funnel 단계별 전환율과 이탈율을 파악해 개선이 필요한 구간(Bottleneck)을 탐색한다.
 	- 전환율을 높일 수 있는 실질적인 방안을 찾고 성과를 측정한다.
-- 목차
+- **목차**
 	- Summary
 	- 일별 주요 통계
 	- 변수별 특성
@@ -149,16 +149,42 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 #### 리포트 본론 단계
 본론 단계에서는 목차에 맞게 중요도가 높은 결과를 기준으로 기술하며, 만약 일회성(Ad-hoc) 분석이 아닌 Tracking 분석일 경우는 스토리텔링 방식으로 기술하는 것이 효과적이다. (예를 들어, 지난 해와 올해의 주요 지표 변화와 사건/이슈를 같이 첨부하여 기술)
 - Summary
+ㅌㅌㅌㅌㅌㅌ
+
 - 일별 주요 통계
+<img src="/img/lecture/session.png" width="50%">
+
+<img src="/img/lecture/daily_ext.png" width="50%">
+
+<img src="/img/lecture/daily_pos.png" width="50%">
+
+<img src="/img/lecture/daily_screen.png" width="50%">
+
+<img src="/img/lecture/daily_screen_heat.png" width="50%">
+
+
 - 변수별 특성
 - 구간별 전환율
+
+<img src="/img/lecture/funnel_conv.png" width="50%">
+
+<img src="/img/lecture/funnel_conv_churn.png" width="50%">
+
 - 클러스터별 전환율 차이
 
+<img src="/img/lecture/cluster_12.png" width="50%">
 
+<img src="/img/lecture/cluster_34.png" width="50%">
 
+<img src="/img/lecture/xls_conv.png" width="50%">
 
+<img src="/img/lecture/doc_conv.png" width="50%">
 
+<img src="/img/lecture/pdf_conv.png" width="50%">
 
+<img src="/img/lecture/hwp_conv.png" width="50%">
+
+<img src="/img/lecture/wg_mean_cluster.png" width="50%">
 
 
 #### 리포트 결론 단계
