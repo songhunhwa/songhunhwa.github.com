@@ -141,9 +141,10 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 - **목차**
 	- Summary
 	- 일별 주요 통계
-	- 변수별 특성
 	- 구간별 전환율
+	- 클러스터링 결과
 	- 클러스터별 전환율 차이
+	- 전환율 개선을 위한 핵심 Targeting 그룹 
 	- 시사점 및 개선안
 
 #### 리포트 본론 단계
@@ -165,10 +166,6 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 		
 	- 스크린별로 사용성 파악 결과, 메인(main) 화면이 가장 많이 노출되며 다음 화면(pub_dir or per_dir)으로 넘어가는 경우 많지 않음
 	<img src="/img/lecture/daily_screen.png" width="80%"> 
-
-- **변수별 특성**
-	- xxx
-	- xxx
 	
 - **구간별 전환율**
 	-  전환율이 가장 낮은 구간(=이탈이 가장 높은 구간)은 구매정보 페이지에서 구매 완료 페이지로 전환하는 구간임(3.7%)
@@ -177,26 +174,31 @@ EDA는 분석가가 데이터를 이해하고 모델링을 잘 하기 위한 필
 	<img src="/img/lecture/funnel_conv_churn.png" width="80%">
 
 - **클러스터링**
-	- 전체를 그룹으로 세분화했을 경우 전환율의 차이를 파악하고 우선순위에 따른 Targeting 위해 k-means 클러스터링 진행함
+	- 전체를 그룹으로 세분화했을 경우 전환율의 차이를 파악하고, 우선순위에 따른 Targeting 위해 k-means 클러스터링 진행함
 	- 확장자 변수를 이용하여 아래와 같이 4개의 그룹으로 세분화함
 	<img src="/img/lecture/cluster_12.png" width="80%">
 	<img src="/img/lecture/cluster_34.png" width="80%">
 
 - **클러스터 별 전환율 차이**
-	- XLS 그룹: Per_dir -> inproduct_web 으로 전환하는 구간이 bottelneck임
+	- XLS 그룹
+		- Per_dir -> inproduct_web 으로 전환하는 구간이 bottelneck임
 	<img src="/img/lecture/xls_conv.png" width="80%">
 	
-	- DOC 그룹: Per_dir -> inproduct_web 으로 전환율은 양호하나, inproduct web -> mob 구간의 이탈이 두드러짐
+	- DOC 그룹
+		- Per_dir -> inproduct_web 으로 전환율은 양호하나, inproduct web -> mob 구간의 이탈이 두드러짐
 	<img src="/img/lecture/doc_conv.png" width="80%">
 
-	- PDF 그룹: 전반적인 구간에서 전화율이 고르게 낮은 편임
+	- PDF 그룹
+		- 전반적인 구간에서 전화율이 고르게 낮은 편임
 	<img src="/img/lecture/pdf_conv.png" width="80%">
 
-	- HWP 그룹: DOC 그룹과 유사하게 inproduct web -> mob 구간의 이탈이 심한 경향을 보임
+	- HWP 그룹
+		- DOC 그룹과 유사하게 inproduct web -> mob 구간의 이탈이 심한 경향을 보임
 	<img src="/img/lecture/hwp_conv.png" width="80%">
 
  - **전환율 개선 Target 그룹**
 	- 구간별 가중치를 고려할 경우, 평균 전환율이 가장 낮은 구간은 pdf 사용그룹이므로 개선이 가장 시급한 그룹으로 고려됨
+	- XLS 및 DOC 그룹은 상대적으로 양호한 전환율을 보이고 있어, 전환율 지속 노력 필요함
 	<img src="/img/lecture/wg_mean_cluster.png" width="80%">
 	
 #### 리포트 결론 단계
