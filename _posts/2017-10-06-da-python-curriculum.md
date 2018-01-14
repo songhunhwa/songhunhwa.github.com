@@ -49,7 +49,31 @@ author: songhunhwa
 - 탐색적 데이터 분석 / 클러스터링
 - 시각화 및 리포팅
 
-#### 3강: 랭킹 및 추천 로직 Prototype 구축
+#### 3강: 신규 비즈니스 지표 개발
+- 유저 이탈 방지를 위한 Risk Indicator 정의
+	- Key Risk Indicator란?
+- 변수 생성 및 전처리
+	- 데이터셋 읽기 및 전처리
+	- EDA 및 Bounce 기준 정하기
+	- Regression의 회귀계수로 지표 생성하기
+- 웹 대시보드 구축
+	- Re:dash란?
+	- Re:dash로 대시보드를 구축하기
+- Statesmodel을 이용한 시계열 예측
+	- 지표의 흐름을 예측해보자
+		
+#### 4강: 결제 예측 모델을 통한 결제율 제고
+- 문제 정의 및 목적
+	- 결제 가능성이 높은 집단의 특성을 파악하고 예측하는 모델 생성
+- 데이터 추출 및 준비
+	- 변수 선정 및 전처리
+- 모델 구축 및 평가
+	- Scikit-learn의 Pipeline 기능을 이용해 Classification 모델 생성하기
+	- 오버피팅 이슈 해결(K-fold), 하이퍼파라메터 튜닝하기 (GridSearch)      
+	- Scikit-learn.Evaluation 모듈을 통해 모델 평가/개선하기  
+
+
+#### 5강: 랭킹 및 추천 로직 Prototype 구축
 - 문제 정의 및 가설 수립
 	- 랭킹과 추천을 위한 목적 정의
 	- 모델 효과 측정을 위한 지표 산출
@@ -65,30 +89,7 @@ author: songhunhwa
 	- 데이터셋 준비
 	- Neighbor, MF 기반 모델 생성
 	- 모델 평가 및 개선
-		
-#### 4강: 신규 비즈니스 지표 개발 (이탈 위험 지표)
-- 유저 이탈 방지를 위한 Risk Indicator 정의
-	- Key Risk Indicator란?
-- 변수 생성 및 전처리
-	- 데이터셋 읽기 및 전처리
-	- EDA 및 Bounce 기준 정하기
-	- Regression의 회귀계수로 지표 생성하기
-- 웹 대시보드 구축
-	- Re:dash란?
-	- Re:dash로 대시보드를 구축하기
-- Statesmodel을 이용한 시계열 예측
-	- 지표의 흐름을 예측해보자
-		
-#### 5강: 결제 예측 모델을 통한 결제율 제고
-- 문제 정의 및 목적
-	- 결제 가능성이 높은 집단의 특성을 파악하고 예측하는 모델 생성
-- 데이터 추출 및 준비
-	- 변수 선정 및 전처리
-- 모델 구축 및 평가
-	- Scikit-learn의 Pipeline 기능을 이용해 Classification 모델 생성하기
-	- 오버피팅 이슈 해결(K-fold), 하이퍼파라메터 튜닝하기 (GridSearch)      
-	- Scikit-learn.Evaluation 모듈을 통해 모델 평가/개선하기  
-		
+			
 #### 6~8강: 개별 프로젝트**  
 - 개별 프로젝트 진행 및 피드백
 - 프로젝트 결과 발표
