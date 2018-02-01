@@ -157,6 +157,10 @@ Source: [Science2knowledge](https://science2knowledge.wordpress.com/data-science
     
 SQL(Presto, Hive)을 통해 데이터를 추출하여 로컬 머신에서 R/Python/사용툴을 사용해 분석하거나, 분산처리 환경인 경우 Spark가 제공하는  API(R/Python/SQL)를 이용해 분석한다. Adhoc이 아닌 트래킹이 필요한 경우 대시보드를 구축하기도 한다.    
 
+<img src="/img/lecture/roles.png" width="80%">
+
+Source: [Udacity](https://blog.udacity.com/2014/11/data-science-job-skills.html)
+
 ### 4. 분석 툴 및 환경
 분석 환경 및 시스템은 회사와 팀의 고유한 특성 및 상황에 따라 크게 좌지우지되는 경향이 있다. 일반적으로 IT 회사의 경우, 오픈소스 및 신기술에 대한 관심도가 높을 가능성이 있다. 반면에 보안에 민감하거나 보수적인 산업의 기업들은(예, 제조, 금융) 전통성 있고 상용 소프트웨어를 선호하는 경향이 있다. 단, 항상 예외는 있다. 보수적인 IT 회사도 존재하며 유연한 사고의 금융, 제조 회사도 존재한다.    
     
