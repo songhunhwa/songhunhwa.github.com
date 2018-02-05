@@ -31,8 +31,7 @@ author: songhunhwa
  - 결제자로 전환할 가능성이 높은 유저를 판별하는 모델 구축
  - 예측 모델의 성능을 측정할 수 있는 지표를 정의
 
-#### 가설 및 아웃풋
-
 <img src="/img/lecture/predmodel.png" width="65%">
 
-
+#### 가설 및 아웃풋
+가설을 설정하기 
