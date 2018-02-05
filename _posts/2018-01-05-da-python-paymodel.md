@@ -49,6 +49,12 @@ author: songhunhwa
 - 모델 성과 측정 대시보드/리포트 (Recall, Precision, AUC, F1-score)
 
 ### 분석 Frame
+일반적인 모델링 구축을 위한 프로세스를 먼저 살펴보자.
+
+<img src="/img/lecture/class_process.png" width="80%">
+
+Source: [Algoline](http://algolytics.com/tutorial-how-to-determine-the-quality-and-correctness-of-classification-models-part-1-introduction/)
+
 
 
 
