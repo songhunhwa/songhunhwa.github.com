@@ -57,16 +57,15 @@ Source: [Algoline](http://algolytics.com/tutorial-how-to-determine-the-quality-a
 
 이번 프로젝트 역시 일반적이 프로세스와 거의 유사하게 진행될 것이다. 리포트 및 공유 문서에 위와 같은 프레임 이미지를 협업자에게 보여준다면 모델링 프로세스에 대한 이해가 높아질 것으로 기대할 수 있다. 위 이미지를 참고하여 이번 프로젝트의 프레임을 구성해보자.
 
-1. **데이터 수집**
+- 데이터 수집
 	- 결제 바로 전, 유저의 행동 패턴을 기술할 수 있는 로그 항목을 수집 (문서 오픈, 편집 등)
-2. **데이터 추출**
+- 데이터 추출
 	- 데이터 추출 및 처리 (SQL 필터, 조인 등)
-3. **데이터 전처리**
+- 데이터 전처리
 	- Feature Engineering (분포 변환, PCA, 결측치 및 이상치 처리 등)
-4. **모델 구축**
-	- Learn the data
+- 모델 구축
 	- Cross Validation, Grid Search
-5. **모델 평가**
+- 모델 평가
 	- Precision, Recall, F1-score
 
 
