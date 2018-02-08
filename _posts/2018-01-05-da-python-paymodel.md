@@ -60,14 +60,14 @@ Source: [Algoline](http://algolytics.com/tutorial-how-to-determine-the-quality-a
 - 데이터 수집
 	- 결제 바로 전, 유저의 행동 패턴을 기술할 수 있는 로그 항목을 수집 (문서 오픈, 편집 등)
 - 데이터 추출
-	- 데이터 추출 및 처리 (SQL 필터, 조인 등)
+	- Extraction, Preprocessing (SQL 필터, 조인 등)
 - 데이터 전처리
 	- Feature Engineering (분포 변환, PCA, 결측치 및 이상치 처리 등)
 - 모델 구축
-	- Cross Validation, Grid Search
+	- Classification Models (Logistic Regression, Random Forest, etc)
+	- Cross Validation, Grid Search, Pipeline
 - 모델 평가
 	- Precision, Recall, F1-score
 
-
-
-
+#### Logic Tree
+지난 시간에 배운 로직 트리를 이용해 전체적인 흐름을 구성하도록 하자. 모델을 구축하고 평가하는 분석가의 role은 보통 보다 큰 프로젝트 안에서 하나의 부분(part)를 맡게 된다. 비즈니스 환경에서 단순히 모델을 구축하는 것이 목적이 되기 보다, 별도의 목표를 달성하기 위한 하나의 수단에 지나지 않는다. 따라서 전체 프로젝트(숲)을 보고 상황에 맞게 도구(나무)를 활용/변경하는 지혜가 필요하다. 따라서 로직트리를 구성할 때는 전체적인 프로젝트를 아우룰 수 있는 방향을 짜는 것이 유용할 수 있다. (단 분석가의 업무가 아닌 부분은 분석가가 이해하는 수준에서 작성해도 무방하다)
