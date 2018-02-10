@@ -85,8 +85,32 @@ Source: [Algoline](http://algolytics.com/tutorial-how-to-determine-the-quality-a
 - 정확한 목적은 무엇이며 목표 달성 수준은 어떻게 정의할 것인가?
 - 필요한 데이터가 무엇인가? 확보가 가능한가?
 
-### 데이터 전처리
+### [데이터 전처리](http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html)
+모든 데이터 분석 프로젝트에서 데이터 전처리는 반드시 거쳐야 하는 과정이다. 대부분의 데이터 분석가가 좋아하지 않는 과정이지만, 분석 결과/인사이트와 모델 성능에 직접적인 영향을 미치는 과정이기 때문에 중요하게 다루어지는 과정이다. 한 설문조사에 의하면, 분석가의 80% 시간을 데이터 수집 및 전처리에 사용한다고 하니, 얼마나 중요한 과정인지 짐작할 수 있다. 물론 지루하고 반복 작업의 연속이기 때문에 시간이 많이 들어가는 측면도 있을 것이다.
 
+<img src="/img/lecture/time_consum.png" width="80%">
 
+Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#7a9598f66f63)
+
+지난 시간에 간단히 언급한 대로, 실무에 사용되는 데이터셋은 바로 분석이 불가능할 정도로 지저분(messy)하다. 분석이 가능한 상태로 만들기 위해 아래와 같은 전처리 방식이 자주 사용된다. 모든 강의에 걸쳐서 전처리 단계는 중요하게 그리고 반복적으로 다루어질 예정이다. 
+
+- Cleaning
+	-  Incomplete, Noisy, Inconsistent 사례 처리
+	-  결측치 처리: 결측치 사례 제거 / 수치형의 경우 평균이나 중앙치로 대체 (범주형인 경우 mode) / 간단한 모델로 예측
+	-  이상치 처리: 표준점수로 변환 후 -3 이하 및 +3 제거 / IQR 방식 / 도메인 지식 이용 / Binning
+- Transformation
+	- Scaling / Normalization
+	- Numeric to Categorical / Categorical to Numeric
+	- Log, Exp, Sqrt functions
+- Reduction & Adding features
+	- PCA / removing based on a statistical method(ANOVA), Tree-based model, RFE
+	- up & down sampling / interaction terms 
+	- Aggregation (roll-up)
+	
+#### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
+
+	
+	
+	
 
 
