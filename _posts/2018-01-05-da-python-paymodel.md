@@ -9,7 +9,7 @@ author: songhunhwa
  - 실제 분석을 진행하는 상황으로 생각하고 실습을 진행한다.
  
 ### 목차
- 1. 문제 정의 및 가설 구축
+ 1. 문제 정의 및 가설
  2. 분석 Frame 구성
  3. 데이터 전처리
  4. 데이터 분석
@@ -38,7 +38,7 @@ author: songhunhwa
 - 가설 1: Open, Edit/Save, Export와 같은 문서 이용행동 관련 변수가 모델 구축에 유의미한 변수일 것
 - 가설 2: 문서 사용 트래픽 및 일주일 간 방문일수 역시 결제 행동와 관련 있는 예측 변수일 것
 
-#### 아웃풋
+#### Expected Output
 - 타깃팅 유저 정보 테이블 (RDB, 일별 배치)
 	- Schema: 날짜, 타깃팅 대상 유저의 아이디, 결제 확률, 결제 예상 여부 (결제 확률 50% 이상일 경우 True, 이하일 경우 False)
 - 타깃팅 결과 테이블 (RDB, 일별 배치)
@@ -85,6 +85,7 @@ Source: [Algoline](http://algolytics.com/tutorial-how-to-determine-the-quality-a
 - 정확한 목적은 무엇이며 목표 달성 수준은 어떻게 정의할 것인가?
 - 필요한 데이터가 무엇인가? 확보가 가능한가?
 
+### 데이터 전처리
 
 
 
