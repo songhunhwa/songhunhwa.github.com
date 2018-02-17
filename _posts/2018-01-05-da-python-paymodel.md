@@ -94,10 +94,94 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 
 지난 시간에 간단히 언급한 대로, 실무에 사용되는 데이터셋은 바로 분석이 불가능할 정도로 지저분(messy)하다. 분석이 가능한 상태로 만들기 위해 아래와 같은 전처리 방식이 자주 사용된다. 모든 강의에 걸쳐서 전처리 단계는 중요하게 그리고 반복적으로 다루어질 예정이다. 
 
-- Cleaning
-	-  Incomplete, Noisy, Inconsistent 사례 처리
-	-  결측치 처리: 결측치 사례 제거 / 수치형의 경우 평균이나 중앙치로 대체 (범주형인 경우 mode) / 간단한 모델로 예측
-	-  이상치 처리: 표준점수로 변환 후 -3 이하 및 +3 제거 / IQR 방식 / 도메인 지식 이용 / Binning
+#### 결측치 처리
+결측치 처리는 1) 결측치 사례 제거 2) 수치형의 경우 평균이나 중앙치로 대체(imputation)하거나 범주형인 경우 mode 값으로 대체 3) 간단한 예측 모델로 대체하는 방식이 일반적으로 이용된다. 가장 쉬운 방법은 Null이 포함 행 혹은 일부 행을 제거하는 것이다. 수집된 사례(observation)이 많다면 이 방법을 사용하는 것이 가능하다. 만약 샘플수가 충분하지 않을 경우, Pandas의 fillna() 명령어로 Null 값을 채우는 것이 가능하다. 연속형인 경우 Mean이나 Median을 이용하고 명목형인 경우 Mode(최빈치)나 예측 모형을 통해 Null 값을 대체할 수 있다.
+
+```python
+# 결측치가 하나도 없는 Case만 선택하는 코드 예제
+df[df.isnull().any(axis=1)]
+```
+
+```python
+# Null 값을 median, mean으로 대체하는 코드 예제
+df.fillna(df.med())
+df.fillna(df.mean()) 
+
+# Scikit-learn Imputation을 이용하여 명목변수의 Null 값을 Mode로 대체한 예제
+from sklearn.preprocessing import Imputer
+imp = Imputer(missing_values = 'NaN', strategy='most_frequent', axis=0)
+df['X'] = imp.fit_transform(df['X'])
+```
+데이터셋을 읽었다면, Missing Value 파악을 위해 df.info() 가장 처음에 이용하는 것을 추천한다. 만약 np.nan으로 적절히 missing value로 불러왔다면 info() 이용 가능하다. 만약 '', ' ' 이런식의 공백이나 다른 방식으로 처리되어 있다면, 모두 repalce 처리해줘야 한다. info()를 실행했을 때, 누가봐도 float or int 인데 object(string)으로 되어 있다면 이런 사레가 포함될 가능성이 높다.
+
+#### 결측치를 처리할 때 고려할 점
+- 결측치를 처리할 경우에도 도메인 지식은 유용하게 사용된다.
+    - 인적, 기계적 원인임이 판명되면, 협업자와 지속적으로 노력해 결측치를 사전에 발생하지 않도록 조치하는 것이 좋다
+- 수치형인 경우 의미상으로 0으로 메꾸는 것이 맞는지 아니면 평균이나 중앙치가 맞는지 등은 데이터에 대한 배경지식이 있는 경우 보다 적절한 의사결정을 할 수 있다.
+    - 예를 들어 viewCount가 1이상인데, edit, export가 missing인 경우 (도메인 지식을 통해) 0으로 메꾸는 것이 가능하다.
+    - View 가 다른 행동에 선행하는 개념이기 때문에 위와 같은 의사결정이 가능하다
+- NA 와 Null 차이점 (R에서만 구분되는 개념, 파이썬에서는 numpy의 NaN만 이용, 가끔 pure python에서 None을 볼 수 있음)
+    - NA: Not Available (does not exist, missing)
+    - Null: empty(null) object
+    - NaN: Not a Number (python)
+    - refer: https://www.r-bloggers.com/r-na-vs-null/
+- 특히 숫자 0과 null 과 같은 결측치는 완전히 다른 개념이니 유의해야 한다
+- 만약 target(group)에 결측치가 있다면 어떻게 처리하는 것이 좋을까?
+    - imputation이 아닌 **dropna()**로 제거하는 것이 옳을 경우가 많음
+
+#### 이상치 처리
+일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다.
+
+##### 1. 표준점수 이용
+    - 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리
+<img src="/img/zscore_od.png" width="80%">
+
+```python
+# 표준점수 기반 예제 코드
+def std_based_outlier(df):
+    for i in range(0, len(df.iloc[1])): 
+        df.iloc[:,i] = df.iloc[:,i].replace(0, np.NaN)
+        df = df[~(np.abs(df.iloc[:,i] - df.iloc[:,i].mean()) > (3*df.iloc[:,i].std()))].fillna(0)
+    return(df)
+```
+---
+##### 2. IQR 방식
+    - 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 경우 극단치로 처리
+<img src="/img/iqr_od.png" width="70%">
+
+```python
+# IQR 기반 예제 코드
+def outliers_iqr(ys):
+    quartile_1, quartile_3 = np.percentile(ys, [25, 75])
+    iqr = quartile_3 - quartile_1
+    lower_bound = quartile_1 - (iqr * 1.5)
+    upper_bound = quartile_3 + (iqr * 1.5)
+    return np.where((ys > upper_bound) | (ys < lower_bound))
+```
+---
+##### 3. MAD(Median-Absolute-Deviation) 방식
+    - IQR과 같은 Percentile 방식은 샘플이 많아질수록 불필요하게 많은 이상치를 탐지하는 경향이 있다. 그러나 MAD 방식은 이러한 부분을 보완한다.
+> Christophe Leys (2014). Detecting outliers: Detecting outliers: **Do not use standard deviation around the mean, use absolute deviation around the median.**
+ - Refer Link: http://stackoverflow.com/questions/22354094/pythonic-way-of-detecting-outliers-in-one-dimensional-observation-data
+ 
+<img src="/img/mad1.png" width="70%">
+<img src="/img/mad2.png" width="70%">
+
+```python
+# MAD 기반 예제코드
+def mad_based_outlier(points, thresh=3.5):
+    if len(points.shape) == 1:
+        points = points[:,None]
+    median = np.median(points, axis=0)
+    diff = np.sum((points - median)**2, axis=-1)
+    diff = np.sqrt(diff)
+    med_abs_deviation = np.median(diff)
+    modified_z_score = 0.6745 * diff / med_abs_deviation
+    return modified_z_score > thresh
+```
+
+
+#### Feature Engineering
 - Transformation
 	- Scaling / Normalization
 	- Numeric to Categorical / Categorical to Numeric
