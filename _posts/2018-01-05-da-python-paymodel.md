@@ -110,13 +110,11 @@ NA 와 Null 차이는 R에서만 구분되는 개념으로 파이썬에서는 nu
 만약 target(group)에 결측치가 있다면 imputation이 아닌 **dropna()** 로 제거하는 것이 적절하다.
 
 #### 이상치 처리
-일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다.
+일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
 
-##### 1. 표준점수 이용
-평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리
-<img src="/img/zscore_od.png" width="80%">
+<img src="/img/lecture/zscore_od.png" width="80%">
 
-```python
+```sql
 # 표준점수 기반 예제 코드
 def std_based_outlier(df):
     for i in range(0, len(df.iloc[1])): 
