@@ -111,50 +111,17 @@ NA 와 Null 차이는 R에서만 구분되는 개념으로 파이썬에서는 nu
 
 #### 이상치 처리
 일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
-<img src="/img/lecture/zscore_od.png" width="40%">
+<img src="/img/lecture/zscore_od.png" width="60%">
 
-```python
-# 표준점수 기반 예제 코드
-def std_based_outlier(df):
-    for i in range(0, len(df.iloc[1])): 
-        df.iloc[:,i] = df.iloc[:,i].replace(0, np.NaN)
-        df = df[~(np.abs(df.iloc[:,i] - df.iloc[:,i].mean()) > (3*df.iloc[:,i].std()))].fillna(0)
-    return(df)
-```
-IQR 방식은 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 경우 극단치로 처리하는 방식이다. 이해하기 쉽고 적용하기 쉬운 편이지만, 경우에 따라 너무 많은 사례들이 극단치로 고려되는 경우가 있다. 
-<img src="/img/lecture/iqr_od.png" width="45%">
-
-```python
-# IQR 기반 예제 코드
-def outliers_iqr(ys):
-    quartile_1, quartile_3 = np.percentile(ys, [25, 75])
-    iqr = quartile_3 - quartile_1
-    lower_bound = quartile_1 - (iqr * 1.5)
-    upper_bound = quartile_3 + (iqr * 1.5)
-    return np.where((ys > upper_bound) | (ys < lower_bound))
-```
-MAD(Median-Absolute-Deviation)방식은 IQR과 같은 Percentile 방식은 샘플이 많아질수록 불필요하게 많은 이상치를 탐지하는 경향이 있다. 그러나 MAD 방식은 이러한 부분을 보완한다.
+IQR 방식은 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 경우 극단치로 처리하는 방식이다. 이해하기 쉽고 적용하기 쉬운 편이지만, 경우에 따라 너무 많은 사례들이 극단치로 고려되는 경우가 있다. MAD(Median-Absolute-Deviation)방식은 IQR과 같은 Percentile 방식은 샘플이 많아질수록 불필요하게 많은 이상치를 탐지하는 경향이 있다. 그러나 MAD 방식은 이러한 부분을 보완한다.
 
 > Christophe Leys (2014). Detecting outliers: Detecting outliers: **Do not use standard deviation around the mean, use absolute deviation around the median.**
 
+MAD를 통한 이상치 처리 예시
+<img src="/img/lecture/mad1.png" width="80%">
+<img src="/img/lecture/mad2.png" width="80%">
+
 Source [StackOverFlow](http://stackoverflow.com/questions/22354094/pythonic-way-of-detecting-outliers-in-one-dimensional-observation-data)
- 
-<img src="/img/lecture/mad1.png" width="70%">
-<img src="/img/lecture/mad2.png" width="70%">
-
-```python
-# MAD 기반 예제코드
-def mad_based_outlier(points, thresh=3.5):
-    if len(points.shape) == 1:
-        points = points[:,None]
-    median = np.median(points, axis=0)
-    diff = np.sum((points - median)**2, axis=-1)
-    diff = np.sqrt(diff)
-    med_abs_deviation = np.median(diff)
-    modified_z_score = 0.6745 * diff / med_abs_deviation
-    return modified_z_score > thresh
-```
-
 
 #### Feature Engineering
 - Transformation
