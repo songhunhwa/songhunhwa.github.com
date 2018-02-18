@@ -100,14 +100,12 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 데이터셋을 읽었다면, Missing Value 파악을 위해 df.info() 가장 처음에 이용하는 것을 추천한다. 만약 np.nan으로 적절히 missing value로 불러왔다면 info() 이용 가능하다. 만약 '', ' ' 이런식의 공백이나 다른 방식으로 처리되어 있다면, 모두 repalce 처리해줘야 한다. info()를 실행했을 때, 누가봐도 float or int 인데 object(string)으로 되어 있다면 이런 사레가 포함될 가능성이 높다.   
 
 #### 결측치를 처리할 때 고려할 점
-결측치를 처리할 경우에도 도메인 지식은 유용하게 사용된다. 인적, 기계적 원인임이 판명되면, 협업자와 지속적으로 노력해 결측치를 사전에 발생하지 않도록 조치하는 것이 좋다. 수치형인 경우 의미상으로 0으로 메꾸는 것이 맞는지 아니면 평균이나 중앙치가 맞는지 등은 데이터에 대한 배경지식이 있는 경우 보다 적절한 의사결정을 할 수 있다.
-    
-NA 와 Null 차이는 R에서만 구분되는 개념으로 파이썬에서는 numpy의 NaN만 이용(가끔 pure python에서 None을 볼 수 있음)
-	- NA: Not Available (does not exist, missing)
-	- Null: empty(null) object
-	- NaN: Not a Number (python)
-	- 특히 숫자 0과 null 과 같은 결측치는 완전히 다른 개념이니 유의해야 한다
-만약 target(group)에 결측치가 있다면 imputation이 아닌 **dropna()** 로 제거하는 것이 적절하다.
+결측치를 처리할 경우에도 도메인 지식은 유용하게 사용된다. 인적, 기계적 원인임이 판명되면, 협업자와 지속적으로 노력해 결측치를 사전에 발생하지 않도록 조치하는 것이 좋다. 수치형인 경우 의미상으로 0으로 메꾸는 것이 맞는지 아니면 평균이나 중앙치가 맞는지 등은 데이터에 대한 배경지식이 있는 경우 보다 적절한 의사결정을 할 수 있다. NA 와 Null 차이는 R에서만 구분되는 개념으로 파이썬에서는 numpy의 NaN만 이용한다.
+
+- NA: Not Available (does not exist, missing)
+- Null: empty(null) object
+- NaN: Not a Number (python)
+- 숫자 0과 NaN 같은 결측치는 완전히 다른 개념이니 유의해야 한다
 
 #### 이상치 처리
 일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
