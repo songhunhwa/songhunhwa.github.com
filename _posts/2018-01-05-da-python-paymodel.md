@@ -112,7 +112,7 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 
 <img src="/img/lecture/zscore_od.png" width="60%">
 
-```python
+```
 # 표준점수 기반 예제 코드
 def std_based_outlier(df):
     for i in range(0, len(df.iloc[1])): 
