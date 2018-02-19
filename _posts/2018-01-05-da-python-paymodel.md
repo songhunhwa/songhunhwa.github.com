@@ -112,6 +112,15 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 
 <img src="/img/lecture/zscore_od.png" width="60%">
 
+```python
+# 표준점수 기반 예제 코드
+def std_based_outlier(df):
+    for i in range(0, len(df.iloc[1])): 
+        df.iloc[:,i] = df.iloc[:,i].replace(0, np.NaN)
+        df = df[~(np.abs(df.iloc[:,i] - df.iloc[:,i].mean()) > (3*df.iloc[:,i].std()))].fillna(0)
+    return(df)
+```
+
 IQR 방식은 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 경우 극단치로 처리하는 방식이다. 이해하기 쉽고 적용하기 쉬운 편이지만, 경우에 따라 너무 많은 사례들이 극단치로 고려되는 경우가 있다. MAD(Median-Absolute-Deviation)방식은 IQR과 같은 Percentile 방식은 샘플이 많아질수록 불필요하게 많은 이상치를 탐지하는 경향이 있다. 그러나 MAD 방식은 이러한 부분을 보완한다.
 
 > Christophe Leys (2014). Detecting outliers: Detecting outliers: **Do not use standard deviation around the mean, use absolute deviation around the median.**
