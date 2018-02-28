@@ -161,8 +161,7 @@ df['X_minmax_scale'] = preprocessing.MinMaxScaler(df['X'] # 최대값 최소값 
 	- two samples: Wilcoxon rank sum test, Mann-Whitney U-test, Wilcoxon signed rank test(Paired)  
 	- more than 2: Kruskal-Wallis test
 	
-- Normalization
-	- 스케일과 다르게, 각 요소간 상대적 거리를 유지하면서 다른 측정 값으로 변환시 사용
+Normalization은 스케일과 다르게, 각 요소간 상대적 거리를 유지하면서 다른 측정 값으로 변환시 사용한다.
 
 
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
@@ -172,10 +171,3 @@ df['X_minmax_scale'] = preprocessing.MinMaxScaler(df['X'] # 최대값 최소값 
 	- PCA / removing based on a statistical method(ANOVA), Tree-based model, RFE
 	- up & down sampling / interaction terms 
 	- Aggregation (roll-up)
-	
-
-	
-	
-	
-
-
