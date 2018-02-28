@@ -160,7 +160,17 @@ df['X_robust_scale'] = preprocessing.robust_scale(df['X'])
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
 
 ### 모델 구축
-일반적인 모델링 프로세스는 아래와 같다. 
+데이터 전처리가 끝났다면, 아래와 같은 프로세스로 모델을 구축한다. 모델링 단계에 들어왔어도 데이터 전처리는 끝난 것은 아니다. 모델의 성능은 알고리즘의 차이 보다 전처리를 어떻게 했는지에 따라 더 많이 영향을 받는 것으로 알려져 있다. 따라서 모델의 성능을 측정해보고 결과가 만족스럽지 않다면, (여러 알고리즘을 사용해보는 것과 더불어) 전처리 단계를 다시 진행해야 할 수도 있다. 또 전처리를 잘하기 위해선 EDA/시각화 과정을 반복해서 진행할 필요가 있다.
 
-<img src="/img/lecture/modeling_process.png" width="50%">
+<img src="/img/lecture/modeling_process.png" width="80%">
 
+#### 모델을 구축하면서 고려할 점
+- 목적과 데이터 특성에 맞는 모델은 무엇인가?
+- 일반화 가능성은 어떠한가? (overfitting, underfitting의 가능성은?)
+- 성능 측정의 지표는? 성능을 높이기 위해 어떻게 Feature Engineering 을 진행할 것인가?
+- 제품 혹은 시스템에 모델을 적용할시 계산량이나 언어 특성에 관해 고려할 부분은 무엇인가?
+- 모델/파라메터 업데이트 주기 및 방식은 어떻게 협의할 것인가?
+
+#### Cross Validation
+구축된 모델의 일반화 가능성, 즉 overfitting, underfitting을 다루는 문제는 매우 중요하다. 이를 효과적으로 다룰 수 있는 방법이 Cross Vaildation이다. Cross Validation은 아래와 같은 순서로 진행된다.
+- 데이터셋을 3파트로 
