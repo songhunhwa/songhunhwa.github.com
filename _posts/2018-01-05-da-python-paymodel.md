@@ -185,6 +185,8 @@ X_trainval, X_test, y_trainval, y_test = train_test_split(X, y, random_state=23)
 X_train, X_val, y_train, y_val = train_test_split(X_trainval, y_trainval, random_state=11)
 ```
 
+<img src="/img/lecture/kfold.png">
+
 - Grid Search를 통해 최적의 파라메터 도출
 	- K-fold
 	- Stratified k-fold
@@ -203,7 +205,6 @@ grid_search.fit(X_train, y_train)
 grid_search.score(X_test, y_test)
 ```
 
-<img src="/img/lecture/kfold.png">
 
 #### Evaluation
 
