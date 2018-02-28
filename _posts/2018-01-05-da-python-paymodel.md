@@ -177,10 +177,34 @@ df['X_robust_scale'] = preprocessing.robust_scale(df['X'])
 	- 50%: train
 	- 20%: validation (for grid search)
 	- 30% test (to be used just once at the last moment)
+
+```python
+from sklearn.cross_validation import train_test_split
+
+X_trainval, X_test, y_trainval, y_test = train_test_split(X, y, random_state=23)
+X_train, X_val, y_train, y_val = train_test_split(X_trainval, y_trainval, random_state=11)
+```
+
 - Grid Search를 통해 최적의 파라메터 도출
 	- K-fold
 	- Stratified k-fold
 	- LOOCV
+
+```python
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {'C': [0.001, 0.01, 0.1, 1, 10, 100],
+              'penalty': ['l1', 'l2']}
+grid_search = GridSearchCV(LogisticRegression(), param_grid, cv=5)	      
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=23)
+
+grid_search.fit(X_train, y_train)
+grid_search.score(X_test, y_test)
+```
+
+<img src="/img/lecture/kfold.png" width="60%">
+
 
 #### Evaluation
 최적의
