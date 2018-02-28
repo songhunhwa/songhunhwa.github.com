@@ -203,8 +203,7 @@ grid_search.fit(X_train, y_train)
 grid_search.score(X_test, y_test)
 ```
 
-<img src="/img/lecture/kfold.png" width="60%">
-
+<img src="/img/lecture/kfold.png">
 
 #### Evaluation
-최적의
+
