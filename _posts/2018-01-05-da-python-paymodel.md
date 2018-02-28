@@ -108,7 +108,7 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 - 숫자 0과 NaN 같은 결측치는 완전히 다른 개념이니 유의해야 한다
 
 #### 이상치 처리
-일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 및 MAD 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
+일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
 
 <img src="/img/lecture/zscore_od.png" width="60%">
 
@@ -117,12 +117,6 @@ IQR 방식은 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 
 <img src="/img/lecture/IQR.png">
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Interquartile_range)
-
-MAD를 통한 이상치 처리 예시
-<img src="/img/lecture/mad1.png" width="80%">
-<img src="/img/lecture/mad2.png" width="80%">
-
-Source: [StackOverFlow](http://stackoverflow.com/questions/22354094/pythonic-way-of-detecting-outliers-in-one-dimensional-observation-data)
 
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
 
