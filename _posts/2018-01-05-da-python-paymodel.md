@@ -181,6 +181,6 @@ df['X_robust_scale'] = preprocessing.robust_scale(df['X'])
 	- K-fold
 	- Stratified k-fold
 	- LOOCV
-- Final Test and feedback loop
 
-
+#### Evaluation
+최적의
