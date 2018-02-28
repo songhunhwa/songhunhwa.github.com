@@ -110,7 +110,7 @@ Source: [Forbes](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparati
 #### 이상치 처리
 일반적으로 1) 표준점수로 변환 후 -3 이하 및 +3 제거 2) IQR 방식 3) 도메인 지식 이용하거나 Binning 처리하는 방식이 이용된다. 표준점수 이용할 경우 평균이 0, 표준편차가 1인 분포로 변환한후 +3 이상이거나 -3 이하인 경우 극단치로 처리한다.
 
-<img src="/img/lecture/zscore_od.png" width="60%">
+<img src="/img/lecture/zscore_od.png" width="40%">
 
 IQR 방식은 75% percentile * 1.5 이상이거나 25 percentile* 1.5 이하인 경우 극단치로 처리하는 방식이다. 이해하기 쉽고 적용하기 쉬운 편이지만, 경우에 따라 너무 많은 사례들이 극단치로 고려되는 경우가 있다. 
 
@@ -155,19 +155,12 @@ df['X_boxcox'] = preprocessing.scale(boxcox(df['X']+1)[0])
 df['X_robust_scale'] = preprocessing.robust_scale(df['X'])
 ```
 
-대부분의 통계 분석 방법이 정규성 가정을 기반으로 한다. 따라서 완벽하지 않더라도 최대한 정규분포로 변환하는 노력이 필요하다. 만약 변환 이후에도 정규 가정을 충족 못한다면, wilcox.test 등 비모수 검정 방법을 사용하는 것이 바람직하다.
-
-- 비모수 검정 방법 예시
-	- one sampes: 1 sample Wilcoxon signed rank test
-	- two samples: Wilcoxon rank sum test, Mann-Whitney U-test, Wilcoxon signed rank test(Paired)  
-	- more than 2: Kruskal-Wallis test
-	
-Normalization은 스케일과 다르게, 각 요소간 상대적 거리를 유지하면서 다른 측정 값으로 변환시 사용한다.
+대부분의 통계 분석 방법이 정규성 가정을 기반으로 한다. 따라서 완벽하지 않더라도 최대한 정규분포로 변환하는 노력이 필요하다. Normalization은 스케일링과 다르게, 각 요소간 상대적 거리를 유지하면서 다른 측정 값으로 변환시 사용한다.
 
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
 
----
-- Reduction & Adding features
-	- PCA / removing based on a statistical method(ANOVA), Tree-based model, RFE
-	- up & down sampling / interaction terms 
-	- Aggregation (roll-up)
+### 모델 구축
+일반적인 모델링 프로세스는 아래와 같다. 
+
+<img src="/img/lecture/modeling_process.png" width="50%">
+
