@@ -43,22 +43,25 @@ author: songhunhwa
 - (실습)SQL 및 Numpy, Pandas를 통한 전처리 
 	
 #### [2강: 유저 Funnel 분석을 통해 이탈 구간 개선](https://songhunhwa.github.io/2017/12/05/da-python-funnel.html)  
-- 문제 정의 및 가설 정립
-- 분석 Frame 구성
-- 데이터 로딩 및 전처리
-- 탐색적 데이터 분석 / 클러스터링
-- 시각화 및 리포팅
+- 목적: Funnel Analysis를 통해 이탈이 자주 발생하는 구간을 파악하고 개선안을 도출
+- 목차
+	- 문제 정의 및 가설 정립
+	- 분석 Frame 구성
+	- 데이터 로딩 및 전처리
+	- 탐색적 데이터 분석 / 클러스터링
+	- 시각화 및 리포팅
 
-#### 3강: 결제 예측 모델을 통한 결제율 제고
-- 문제 정의 및 목적
-	- 결제 가능성이 높은 집단의 특성을 파악하고 예측하는 모델 생성
-- 데이터 추출 및 준비
-	- 변수 선정 및 전처리
-- 모델 구축 및 평가
-	- Scikit-learn의 Pipeline 기능을 이용해 Classification 모델 생성하기
-	- 오버피팅 이슈 해결(K-fold), 하이퍼파라메터 튜닝하기 (GridSearch)      
-	- Scikit-learn.Evaluation 모듈을 통해 모델 평가/개선하기  
+#### [3강: 결제 예측 모델을 통한 결제율 제고](https://songhunhwa.github.io/2018/01/05/da-python-paymodel.html)
+- 목적: 결제 확률이 높은 유저들를 분류하는 모델을 구축하고 성능을 측정
+- 목차
+	- 문제 정의 및 가설
+	- 분석 Frame 구성
+	- 데이터 전처리
+	- 데이터 분석
+	- 리포트 작성
 
+
+---
 #### 4강: 신규 비즈니스 지표 개발
 - 유저 이탈 방지를 위한 Risk Indicator 정의
 	- Key Risk Indicator란?
