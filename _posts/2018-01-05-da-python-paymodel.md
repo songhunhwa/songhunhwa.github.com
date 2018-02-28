@@ -143,15 +143,16 @@ df['X_sqrt'] = preprocessing.scale(np.sqrt(df['X']+1)) # 제곱근
 
 - Scaling: 평균이 0, 분산이 1인 분포로 변환
 - MinMax Scaling: 특정 범위 (예, 0~1)로 모든 데이터를 변환
-- box-cox(여러 k 값중 가장 작은 SSE 선택)
+- Box-Cox: 여러 k 값중 가장 작은 SSE 선택
+- Robust_scale: median, interquartile range 사용(outlier 영향 최소화)
 
 ```python
 from scipy.stats import boxcox
 
-df['X_boxcox'] = preprocessing.scale(boxcox(df['X']+1)[0]) # box-cox(여러 k 값중 가장 작은 SSE 선택)
-df['X_scale'] = preprocessing.scale(df['X']) # 평균이 0, 분산을 0으로 선형변환
-df['X_robust_scale'] = preprocessing.robust_scale(df['X']) # median, interquartile range 사용(outlier 영향 최소화)
-df['X_minmax_scale'] = preprocessing.MinMaxScaler(df['X'] # 최대값 최소값 이용 0-1 range로 변환
+df['X_scale'] = preprocessing.scale(df['X']) 
+df['X_minmax_scale'] = preprocessing.MinMaxScaler(df['X']
+df['X_boxcox'] = preprocessing.scale(boxcox(df['X']+1)[0])
+df['X_robust_scale'] = preprocessing.robust_scale(df['X'])
 ```
 
 대부분의 통계 분석 방법이 정규성 가정을 기반으로 한다. 따라서 완벽하지 않더라도 최대한 정규분포로 변환하는 노력이 필요하다. 만약 변환 이후에도 정규 가정을 충족 못한다면, wilcox.test 등 비모수 검정 방법을 사용하는 것이 바람직하다.
@@ -162,7 +163,6 @@ df['X_minmax_scale'] = preprocessing.MinMaxScaler(df['X'] # 최대값 최소값 
 	- more than 2: Kruskal-Wallis test
 	
 Normalization은 스케일과 다르게, 각 요소간 상대적 거리를 유지하면서 다른 측정 값으로 변환시 사용한다.
-
 
 #### [실습. 데이터 전처리](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
 
