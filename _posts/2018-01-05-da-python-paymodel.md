@@ -206,3 +206,16 @@ grid_search.score(X_test, y_test)
 ```
 
 #### Evaluation
+회귀 및 분류 문제에 따라 평가하는 지표가 차이가 있다. 이번 프로젝트의 경우 이진 분류 문제에 해당하므로 Confusion Matrix 와 ROC Curve를 통해 모델을 평가하고 개선하는 작업을 진행하고자 한다. 참고로 평가지표를 설정할 경우에는 상황/환경, 우선순위 등에 따라 협의하에 선정된다. 
+
+- 회귀
+	- Mean Absolute Error (MAE)
+	- Mean Squared Error (MSE)
+	- Root Mean Squared Error (RMSE)
+	- R-squre
+
+- 분류
+	- Confusion Matrix (TP, TN, FP, FN, Accuracy, Precision, Recall, F1-score)
+	- ROC Curve (AUC)
+	
+Scikit-learn에서는 
