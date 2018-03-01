@@ -205,6 +205,4 @@ grid_search.fit(X_train, y_train)
 grid_search.score(X_test, y_test)
 ```
 
-
 #### Evaluation
-
