@@ -218,4 +218,15 @@ grid_search.score(X_test, y_test)
 	- Confusion Matrix (TP, TN, FP, FN, Accuracy, Precision, Recall, F1-score)
 	- ROC Curve (AUC)
 	
-Scikit-learn에서는 
+Scikit-learn에서는 분류 문제와 관련한 성과 지표를 쉽게 확인할 수 있도록 아래 클래스를 제공한다.
+
+```python
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import roc_curve, auc
+
+print(confusion_matrix(grid_search.predict(X_test), y_test))
+print(classification_report(grid_search.predict(X_test), y_test))
+roc_curve(y_test, grid_search.predict(X_test))
+```
+
