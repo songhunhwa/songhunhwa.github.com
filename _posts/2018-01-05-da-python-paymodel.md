@@ -227,6 +227,6 @@ from sklearn.metrics import roc_curve, auc
 
 print(confusion_matrix(grid_search.predict(X_test), y_test))
 print(classification_report(grid_search.predict(X_test), y_test))
-roc_curve(y_test, grid_search.predict(X_test))
+print(roc_curve(y_test, grid_search.predict(X_test)))
 ```
 
