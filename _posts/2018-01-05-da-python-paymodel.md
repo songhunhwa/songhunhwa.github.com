@@ -270,6 +270,13 @@ param_grid = [{'classifier': [SVC()],
               'classifier__n_estimators': [50, 100], # n_estimators: The number of trees in the forest.
               'classifier__min_samples_split': [50, 100]
               }] # min_samples_split: The minimum number of samples required to split an internal node       
+
+grid = GridSearchCV(pipe, param_grid, scoring = 'roc_auc', cv=5)  
+grid.fit(X_train, y_train)
+
+print(grid.best_params_)
+print(grid.best_score_)
+
 ```
 
 #### [실습. 모델 구축](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
