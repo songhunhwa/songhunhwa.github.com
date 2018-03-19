@@ -250,6 +250,7 @@ Scikit-learn은 전처리(스케일랑, feature selection, model selection)과 g
 
 ```python
 from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 
