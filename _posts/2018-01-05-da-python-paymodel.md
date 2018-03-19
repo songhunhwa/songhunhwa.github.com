@@ -190,7 +190,6 @@ X_train, X_val, y_train, y_val = train_test_split(X_trainval, y_trainval, random
 - Grid Search를 통해 최적의 파라메터 도출
 	- K-fold
 	- Stratified k-fold
-	- LOOCV
 
 ```python
 from sklearn.model_selection import GridSearchCV
@@ -226,5 +225,53 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_curve, 
 print(confusion_matrix(grid_search.predict(X_test), y_test))
 print(classification_report(grid_search.predict(X_test), y_test))
 ```
+
+<img src="/img/lecture/roc.png">
+
+#### Upsampling & Downsampling for imbalanced data
+타깃 변수의 그룹별 비율이 차이가 나는 경우, (예 결제자의 수가 매우 적고 비결제자의 수가 많은 경우) Imbalance 분포를 보이게 된다. 이와 같은 경우 모델이 학습을 위해 요구하는 충분한 데이터가 제공되지 않으므로 아래와 같은 방법을 고려해야 한다.
+
+<img src="/img/lecture/imbalance.png">
+
+- Collect More Data (if possible)
+- Resampling the Dataset
+	- oversampling (no inofromation loss, perform better than undersampling, but overfitting issues) 
+	- undersampling (help improve run time and storage problems, but information loss, biased dataset)
+- Generate Synthetic Samples
+
+#### [Feature Selection](https://machinelearningmastery.com/feature-selection-machine-learning-python/)
+ - Multicollinearity
+ - Univariate Selection (T-test, ANOVA, Coefficient)
+ - Feature Importance (Tree-based model)
+ - RFE (recursive feature elimination)
+ 
+#### 파이프라인
+Scikit-learn은 전처리(스케일랑, feature selection, model selection)과 grid search 를 한번에 진행할 수 있도록 파이프라인 기능을 제공한다.
+
+```python
+from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+
+pipe = Pipeline([('classifier', LogisticRegression())])
+
+param_grid = [{'classifier': [SVC()], 
+              'classifier__gamma': [0.01, 0.1, 1, 10, 100], 
+              'classifier__C': [0.01, 0.1, 1, 10, 100]
+              },
+              
+               {'classifier': [LogisticRegression()],
+               'classifier__penalty': ['l1', 'l2'], 
+               'classifier__C': [0.001, 0.01, 0.1, 1, 10, 100]
+               },
+              
+              {'classifier': [RandomForestClassifier()],
+              'classifier__max_depth': [4, 6], # max_depth: The maximum depth of the tree.
+              'classifier__n_estimators': [50, 100], # n_estimators: The number of trees in the forest.
+              'classifier__min_samples_split': [50, 100]
+              }] # min_samples_split: The minimum number of samples required to split an internal node       
+```
+
+#### [실습. 모델 구축](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_03)
 
 
