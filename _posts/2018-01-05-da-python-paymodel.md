@@ -225,6 +225,6 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_curve, 
 
 print(confusion_matrix(grid_search.predict(X_test), y_test))
 print(classification_report(grid_search.predict(X_test), y_test))
-print(roc_curve(y_test, grid_search.predict(X_test)))
 ```
+
 
