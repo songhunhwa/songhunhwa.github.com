@@ -245,7 +245,7 @@ print(classification_report(grid_search.predict(X_test), y_test))
  - Feature Importance (Tree-based model)
  - RFE (recursive feature elimination)
  
-#### 파이프라인
+#### [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html)
 Scikit-learn은 전처리(스케일랑, feature selection, model selection)과 grid search 를 한번에 진행할 수 있도록 파이프라인 기능을 제공한다.
 
 ```python
