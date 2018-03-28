@@ -184,7 +184,7 @@ Source: [AWS](https://aws.amazon.com)
 ```
 ### [실습](https://github.com/songhunhwa/songhunhwa.github.com/tree/master/tutorial/tutorial_01)
 - JSON Client Log Parsing with JSON Library
-- 전처리 with SQL, Pandas Dataframe
+- 데이터 추출 with SQL, Pandas Dataframe
 
 
  
